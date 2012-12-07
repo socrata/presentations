@@ -385,12 +385,12 @@ X-App-Token: CGxaHQoQlgQSev4zyUh5aR5J3
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src:'../../lib/reveal.js/clib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src:'../../lib/reveal.js/cplugin/markdown/showdown.js', condition: function() { return !!document.querySelector('c[data-markdown]' ); } },
+          { src:'../../lib/reveal.js/cplugin/markdown/markdown.js', condition: function() { return !!document.querySelector('c[data-markdown]' ); } },
+          { src:'../../lib/reveal.js/cplugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src:'../../lib/reveal.js/cplugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src:'../../lib/reveal.js/cplugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
           // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
