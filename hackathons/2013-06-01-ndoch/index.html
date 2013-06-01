@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NDoCH Introduction to SODA</title>
+
+    <meta name="description" content="An introduction to the Socrata Open Data APIs">
+    <meta name="author" content="Chris Metcalf">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../../lib/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="../../lib/reveal.js/css/theme/default.css">
+    <link rel="stylesheet" href="../../lib/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="custom.css">
+
+    <script>
+      // If the query includes 'print-pdf' we'll use the PDF print sheet
+      document.write( '<link rel="stylesheet" href="../../lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown>
+          ![National Day of Civic Hacking](../../img/ndoch.png)
+          ## Introduction to the SODA APIs
+
+          ![SODA](../../img/can.png)
+        </section>
+
+        <section>
+          <section data-markdown>
+            # Who the heck are you?
+
+            ![APIs](../../img/socrata-white.png)
+          </section>
+
+          <section data-markdown>
+            <h2>We build <span style="color: #4e82ff">software</span> to make <span style="color: #ff5887">data</span> useful to <span style="color: #f7b63d">more people</span>.</h2>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            # Why are APIs important?
+
+            ![APIs](../../img/Gear.png)
+          </section>
+
+          <section data-markdown>
+            ## Open data is messy
+
+            <pre>
+C00000042|ILLINOIS TOOL WORKS FOR BETTER GOVERNMENT COMMITTEE|Michael J. Lynch|3600 W. Lake Avenue||Glenview|IL|60025|U|Q||Q|C|ILLINOIS TOOL WORKS INC|
+C00000059|HALLMARK CARDS PAC|Swarens, Greg|2501 McGee|MD #288|Kansas City|MO|64108|U|Q|UNK|M|C|HALLMARK CARDS INCORPORATED|
+C00000422|AMERICAN MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE|WALKER, KEVIN|25 MASSACHUSETTS AVENUE NW|SUITE 600|WASHINGTON|DC|20001|U|Q||M|M|AMERICAN MEDICAL ASSOCIATION|
+C00000489|D R I V E POLITICAL FUND, CHAPTER 886|RON COBB|3528 WEST RENO||OKLAHOMA CITY|OK|73107|U|Q||Q|L|TEAMSTERS LOCAL UNION 886|
+C00000547|KANSAS MEDICAL SOCIETY POLITICAL ACTION COMMITTEE|C. RICHARD BONEBRAKE, M.D.|623 SW 10TH AVE||TOPEKA|KS|66612|U|Q|UNK|Q|T|MEDICAL ASS'N; KANSAS          [AMPAC]|
+C00000638|INDIANA STATE MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE|Kora, M.D., Vidya|322 Canal Walk, Canal Level|.|Indianapolis|IN|46202|U|Q||Q|M|Indiana State Medical Association|
+C00000729|AMERICAN DENTAL POLITICAL ACTION CMTE.|Triftshauser, Roger W|1111 14th Street NW|Suite 1100|Washington|DC|20005|U|Q|UNK|M|T|DENTAL ASS'N; AMERICAN|
+            </pre>
+
+            Courtesy of [ftp.fec.gov](ftp://ftp.fec.gov)
+          </section>
+
+          <section data-markdown>
+            ## A downloaded dataset is a stale dataset
+
+            ![Clock](../../img/Alarm_clock.tif.png)
+          </section>
+
+          <section data-markdown>
+            ## You don't want to have to run your own API
+
+            ![Hockey Puck](../../img/Database.tif.png)
+          </section>
+
+          <section data-markdown>
+            ## You want your app to be portable
+
+            ![Rocket](../../img/Web.tif.png)
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            # The Socrata Open Data APIs
+
+            ![SODA](../../img/can.png)
+          </section>
+
+          <section data-markdown>
+            ## Every dataset, on every Socrata data site
+
+            <pre><code contenteditable>
+GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-08-22 15:45'
+[
+  {
+    "address": "1402 E Pike St",
+    "longitude": "-122.314118",
+    "latitude": "47.614121",
+    "incident_number": "F120079189",
+    "datetime": 1345675560,
+    "type": "Motor Vehicle Accident",
+    "report_location": {
+      "longitude": "-122.314118",
+      "latitude": "47.614121"
+    }
+  }
+]
+            </code></pre>
+          </section>
+
+          <section data-markdown>
+            ## Open, standards-based, non-proprietary
+
+            * Simple, [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) APIs for each dataset
+            * SQL-like query syntax
+            * `JSON`, `XML`, `RDF-XML`, `CSV`
+            * Open Source [client libraries](http://github.com/socrata)
+          </section>
+
+          <section data-markdown>
+            ## Finding Data
+
+            * [hackforchange.org/datasets](http://hackforchange.org/datasets)
+            * [communities.socrata.com](https://communities.socrata.com)
+            * [http://www.data.gov/developers/page/developer-data](http://www.data.gov/developers/page/developer-data)
+          </section>
+
+          <section data-markdown>
+            ## API Endpoints
+
+            Format:
+
+            <code>https://<span class="greenery">$domain</span>/<span class="toy-store-blue">resource</span>/<span class="golden">$identifier</span>.<span class="blushing-salmon">ext</span></code>
+
+          </section>
+
+          <section data-markdown>
+            ## API Endpoints
+
+            Example: [Electric Consumption by Zip Code](https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234)
+
+            <code style="font-size: 0.7em"> https://<span class="greenery">data.city.gov</span>/envir.../elec.../<span style="color: #ffca14">abcd-1234</span> </code>
+
+            ... becomes ...
+
+            <code style="font-size: 0.7em">
+              https://<span class="greenery">data.city.gov</span>/<span class="toy-store-blue">resource</span>/<span class="golden">abcd-1234</span>.<span class="blushing-salmon">json</span>
+            </code>
+
+          </section>
+
+          <section data-markdown>
+            ## Simple Filters
+
+            <code>
+              /resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
+            </code>
+
+            <pre><code data-trim contenteditable class="javascript">
+  [ {
+    "zipcode" : "10001",
+    "<span class="toy-store-blue">source</span>" : "<span class="golden">ConEd</span>",
+    "location" : {
+      "longitude" : "-73.99688630375988",
+      "latitude" : "40.75025902143676",
+    },
+    "building_type" : "Commercial",
+    "kwh" : "23328498"
+  }, ... ]
+            </code></pre>
+          </section>
+
+          <section data-markdown>
+            ## SoQL Queries
+
+            <code>
+              /resource/abcd-1234.json?<br/>
+                <span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
+            </code>
+
+            <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+          </section>
+
+          <section data-markdown>
+            ## Aggregating Data
+
+            <code>
+              /resource/abcd-1234.json?<br/>
+                <span class="toy-store-blue">$select</span>=<span class="golden">source, sum(kwh)</span><br>
+                &amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
+            </code>
+
+            <pre><code data-trim contenteditable class="javascript">
+  [ {
+    "source" : "ConEd",
+    "sum_kwh" : "49469570957"
+  }, {
+    "source" : "Long Island Power Authority",
+    "sum_kwh" : "445333629"
+  }, ... ]
+            </code></pre>
+          </section>
+
+          <section data-markdown>
+            ## Limiting Output
+
+            <code>
+              /resource/abcd-1234.json?<br />
+                <span class="toy-store-blue">$limit</span>=<span class="golden">5</span>
+            </code>
+          </section>
+
+          <section data-markdown>
+            ## Paging Through Data
+
+            <code contenteditable>
+              /resource/abcd-1234.json?<br/>
+              <span class="toy-store-blue">$limit</span>=<span class="golden">50</span><br/>
+                &amp;<span class="toy-store-blue">$offset</span>=<span class="golden">100</span>
+            </code>
+          </section>
+          
+          <section data-markdown>
+            ## Application Tokens
+
+            1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
+            2. Include as:
+              - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
+              - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
+            3. Profit!!! (from more API requests)
+
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            # Help!
+
+            ![Questions](../../img/Question.tif.png)
+
+          </section>
+
+          <section data-markdown>
+            ## Developer Portal
+
+            ![Developer Portal](../../img/Info.tif.png)
+
+            [http://dev.socrata.com](http://dev.socrata.com)
+          </section>
+
+          <section data-markdown>
+            <img src="../../img/socrata-heart-opensource.png"/>
+          </section>
+
+          <section data-markdown>
+            ## Open Source Code
+
+            * Libraries in: 
+              * Ruby
+              * Java
+              * Scala
+              * ObjectiveC / iOS
+            * Our entire backend stack
+            * ... and more!
+
+            ![Github](../../img/octocat.png)
+            ### [http://github.com/socrata](http://github.com/socrata)
+          </section>
+
+          <section data-markdown>
+            ## Live Help!
+
+            * IRC: [chat.freenode.net #nodch](https://webchat.freenode.net/) 
+            * Twitter: [@socrata](http://twitter.com/socrata) or [@chrismetcalf](http://twitter.com/chrismetcalf)
+            * Support Portal [support.socrata.com](http://support.socrata.com)
+            * Track down one of us!
+          </section>
+
+        </section>
+
+        <section data-markdown>
+          ## One more thing...
+
+          <h1 class="fragment" data-fragment-index="0">We're hiring!</h1>
+
+          <h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/jobs">www.socrata.com/jobs</a></h2>
+        </section>
+
+        <section data-markdown>
+          # Thanks!
+
+          ![Moustaches!](../../img/moustaches.jpg)
+        </section>
+
+        <section data-markdown>
+          ## Powered by
+          # [reveal.js](http://lab.hakim.se/reveal-js/)
+        </section>
+      </div>
+    </div>
+
+    <script src="../../lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="../../lib/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../lib/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector('[data-markdown]' ); } },
+          { src: '../../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]' ); } },
+          { src: '../../lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          //{ src: '../../lib/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
