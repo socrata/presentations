@@ -1,0 +1,35 @@
+.reveal section img {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.giant {
+  font-size: 1.3em; }
+
+.smaller {
+  font-size: 0.6em; }
+
+.toy-store-blue {
+  color: #12daeb; }
+
+.blushing-salmon {
+  color: #f513aa; }
+
+.golden {
+  color: #ffca14; }
+
+.greenery {
+  color: #49f071; }
+
+.georgia-peach {
+  color: #ff9c4e; }
+
+.radioactive-banana {
+  color: #ffe34e; }
