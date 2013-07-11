@@ -1,102 +1,88 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Socrata U | API School</title>
+---
+layout: presentation
+title: Socrata U | API School
+description: An introduciton to the Socrata Open Data APIs
+---
 
-    <meta name="description" content="An introduction to the Socrata Open Data APIs">
-    <meta name="author" content="Chris Metcalf">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<section data-markdown>
+  # Socrata University
+  ## API School
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  ![Socrata U](../../img/socrata-u-logo.png)
 
-    <link rel="stylesheet" href="../../lib/reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="../../lib/reveal.js/css/theme/default.css">
-    <link rel="stylesheet" href="../../lib/reveal.js/lib/css/zenburn.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="custom.css">
+  <span class="giant">
+    [@chrismetcalf](http://twitter.com/chrismetcalf)
+  </span>
+</section>
 
-    <script>
-      // If the query includes 'print-pdf' we'll use the PDF print sheet
-      document.write( '<link rel="stylesheet" href="../../lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
+<section>
+  <section data-markdown>
+    # Who the heck are you?
 
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+    ![APIs](../../img/socrata-white.png)
+  </section>
 
-  <body>
+  <section data-markdown>
+    <h2>We build <span class="toy-store-blue">software</span> to make <span class="blushing-salmon">data</span> useful to <span class="golden">more people</span> in the ways that are <span class="greenery">most useful to them</span>.</h2>
+  </section>
 
-    <div class="reveal">
+  <section data-markdown>
+    <a href="http://www.flickr.com/photos/rywalters/3041058360/"><img src="../../img/seattle.jpg" /></a>
+    <span class="fragment" data-fragment-index=0><a href="http://www.flickr.com/photos/crazygeorge/4638880464/"><img src="../../img/dc.jpg"/></a></span>
+    <span class="fragment" data-fragment-index=1><a href="http://www.flickr.com/photos/33793776@N07/4171252472/"><img src="../../img/sf.jpg"/></a></span>
+    <span class="fragment" data-fragment-index=2><a href="http://www.flickr.com/photos/furyksx/392535958/"><img src="../../img/london.jpg"/></a></span>
+  </section>
 
-      <!-- Used to fade in a background when a specific slide state is reached -->
-      <div class="state-background"></div>
+  <section data-markdown>
+    {% include customers.html %}
+  </section>
+</section>
 
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
-        <section data-markdown>
-          # Socrata University
-          ## API School
+<section>
+  <section data-markdown>
+    # So what is an API anyway?
 
-          ![Socrata U](../../img/socrata-u-logo.png)
+    ![APIs](../../img/Bubble_blue.tif.png)
+  </section>
 
-          <span class="giant">
-            [@chrismetcalf](http://twitter.com/chrismetcalf)
-          </span>
-        </section>
+  <section data-markdown>
+    <div style="text-align: left; font-size: 3em; line-height: 1.1em">
+      <span class="blushing-salmon">A</span>pplication<br/>
+      <span class="fragment" data-fragment-index=0><span class="toy-store-blue">P</span>rogramming<br/></span>
+      <span class="fragment" data-fragment-index=1><span class="golden">I</span>nterface</span>
+    </div>
+  </section>
 
-        <section>
-          <section data-markdown>
-            # Who the heck are you?
+  <section data-markdown>
+    # Common Language
 
-            ![APIs](../../img/socrata-white.png)
-          </section>
+    A <span class="blushing-salmon">consistent</span> way for <span class="toy-store-blue">two software systems</span> to <span class="golden">communicate</span>.
+  </section>
 
-          <section data-markdown>
-            <h2>We build <span style="color: #4e82ff">software</span> to make <span style="color: #ff5887">data</span> useful to <span style="color: #f7b63d">more people</span>.</h2>
-          </section>
+  <section data-markdown>
+    # Stable Platform
 
-          <section data-markdown>
-<a href="http://data.edmonton.ca" style="font-size: 0.9035870402333326em; color: #ff9c4e">data.edmonton.ca</a> <a href="http://finances.worldbank.org" style="font-size: 0.8772951426467999em; color: #f513aa">finances.worldbank.org</a> <a href="http://data.cityofchicago.org" style="font-size: 0.8563282192850427em; color: #49f071">data.cityofchicago.org</a> <a href="http://data.seattle.gov" style="font-size: 1.0113351991377095em; color: #ff9c4e">data.seattle.gov</a> <a href="http://data.oregon.gov" style="font-size: 1.0632000405122985em; color: #ffe34e">data.oregon.gov</a> <a href="http://data.wa.gov" style="font-size: 1.1467716657173754em; color: #f513aa">data.wa.gov</a> <a href="http://www.metrochicagodata.org" style="font-size: 1.1728588452112927em; color: #49f071">www.metrochicagodata.org</a> <a href="http://data.cityofboston.gov" style="font-size: 1.1361943315973417em; color: #ff9c4e">data.cityofboston.gov</a> <a href="http://info.samhsa.gov" style="font-size: 1.1316050277786331em; color: #ffe34e">info.samhsa.gov</a> <a href="http://explore.data.gov" style="font-size: 1.062317212822309em; color: #49f071">explore.data.gov</a> <a href="http://data.cms.gov" style="font-size: 1.0660574549214934em; color: #49f071">data.cms.gov</a> <a href="http://data.ok.gov" style="font-size: 1.162736854995904em; color: #f513aa">data.ok.gov</a> <a href="http://data.nola.gov" style="font-size: 1.126505050300791em; color: #ffca14">data.nola.gov</a> <a href="http://data.illinois.gov" style="font-size: 1.177374336683778em; color: #f513aa">data.illinois.gov</a> <a href="http://data.colorado.gov" style="font-size: 1.001052214697448em; color: #ff9c4e">data.colorado.gov</a> <a href="http://data.austintexas.gov" style="font-size: 1.124727735232786em; color: #f513aa">data.austintexas.gov</a> <a href="http://data.undp.org" style="font-size: 1.1124439375453006em; color: #f513aa">data.undp.org</a> <a href="http://www.opendatanyc.com" style="font-size: 0.8712428632285159em; color: #12daeb">www.opendatanyc.com</a> <a href="http://data.mo.gov" style="font-size: 0.9029850703557044em; color: #ffe34e">data.mo.gov</a> <a href="http://data.nfpa.org" style="font-size: 1.012872911193062em; color: #ff9c4e">data.nfpa.org</a> <a href="http://data.raleighnc.gov" style="font-size: 0.9086882003859384em; color: #12daeb">data.raleighnc.gov</a> <a href="http://dati.lombardia.it" style="font-size: 0.9039858675056424em; color: #49f071">dati.lombardia.it</a> <a href="http://data.montgomerycountymd.gov" style="font-size: 0.9352653110386874em; color: #12daeb">data.montgomerycountymd.gov</a> <a href="http://data.cityofnewyork.us" style="font-size: 1.1265759882837703em; color: #ffca14">data.cityofnewyork.us</a> <a href="http://data.acgov.org" style="font-size: 0.9437766738336744em; color: #ffe34e">data.acgov.org</a> <a href="http://data.baltimorecity.gov" style="font-size: 0.882579426803236em; color: #ff9c4e">data.baltimorecity.gov</a> <a href="http://data.energystar.gov" style="font-size: 0.8117560767109612em; color: #f513aa">data.energystar.gov</a> <a href="http://data.somervillema.gov" style="font-size: 1.186507877285259em; color: #12daeb">data.somervillema.gov</a> <a href="http://data.maryland.gov" style="font-size: 1.1530969164867597em; color: #49f071">data.maryland.gov</a> <a href="http://data.taxpayer.net" style="font-size: 0.9440308901295145em; color: #49f071">data.taxpayer.net</a> <a href="http://bronx.lehman.cuny.edu" style="font-size: 1.137302902999452em; color: #f513aa">bronx.lehman.cuny.edu</a> <a href="http://data.hawaii.gov" style="font-size: 0.8638436634481809em; color: #49f071">data.hawaii.gov</a> <a href="http://data.sfgov.org" style="font-size: 0.8240410381260401em; color: #f513aa">data.sfgov.org</a> <a href="http://data.cityofmadison.com" style="font-size: 1.1636966314697277em; color: #ff9c4e">data.cityofmadison.com</a> <a href="http://healthmeasures.aspe.hhs.gov" style="font-size: 1.1052267008290044em; color: #ffe34e">healthmeasures.aspe.hhs.gov</a> <a href="http://data.weatherfordtx.gov" style="font-size: 0.8457828258902456em; color: #ff9c4e">data.weatherfordtx.gov</a> <a href="http://www.data.act.gov.au" style="font-size: 1.0336232856843122em; color: #49f071">www.data.act.gov.au</a> <a href="http://data.wellingtonfl.gov" style="font-size: 1.0361669863636078em; color: #f513aa">data.wellingtonfl.gov</a> <a href="http://data.honolulu.gov" style="font-size: 0.9228070519475722em; color: #49f071">data.honolulu.gov</a> <a href="http://data.kcmo.org" style="font-size: 1.1372774733191855em; color: #ffe34e">data.kcmo.org</a> <a href="http://data2020.abtassociates.com" style="font-size: 1.0918792668326849em; color: #f513aa">data2020.abtassociates.com</a> <a href="http://data.ny.gov" style="font-size: 0.856122168372811em; color: #ffca14">data.ny.gov</a> <a href="http://health.data.ny.gov" style="font-size: 1.0716491273897588em; color: #49f071">health.data.ny.gov</a> <a href="http://www.halifaxopendata.ca" style="font-size: 1.1581545906658088em; color: #12daeb">www.halifaxopendata.ca</a> <a href="http://portal.louisvilleky.gov" style="font-size: 1.0584978291854956em; color: #ffca14">portal.louisvilleky.gov</a> <a href="http://data.medicare.gov" style="font-size: 1.0136608021963394em; color: #49f071">data.medicare.gov</a> <a href="http://data.southbendin.gov" style="font-size: 1.143429001170099em; color: #12daeb">data.southbendin.gov</a> 
-          </section>
-        </section>
+    A <span class="blushing-salmon">guarantee</span> that the <span class="toy-store-blue">language</span> will not <span class="golden">change</span> without notice.
+  </section>
 
-        <section>
-          <section data-markdown>
-            # So what is an API anyway?
+  <section data-markdown>
+    # Contract
 
-            ![APIs](../../img/Bubble_blue.tif.png)
-          </section>
+    An API is a <span class="blushing-salmon">contract</span> between a <span class="toy-store-blue">provider</span> and a <span class="golden">consumer</span>.
+  </section>
+</section>
 
-          <section data-markdown>
-            <div style="text-align: left; font-size: 3em; line-height: 1.1em">
-              <span class="blushing-salmon">A</span>pplication<br/>
-              <span class="fragment" data-fragment-index=0><span class="toy-store-blue">P</span>rogramming<br/></span>
-              <span class="fragment" data-fragment-index=1><span class="golden">I</span>nterface</span>
-            </div>
-          </section>
+<section>
+  <section data-markdown>
+    # Why are APIs important?
 
-          <section data-markdown>
-            # A Contract
+    ![APIs](../../img/Gear.png)
+  </section>
 
-            An API is a <span class="blushing-salmon">contract</span> between a <span class="toy-store-blue">provider</span> and a <span class="golden">consumer</span>.
+  <section data-markdown>
+    ## Open data is messy
 
-          </section>
-        </section>
-
-        <section>
-          <section data-markdown>
-            # Why are APIs important?
-
-            ![APIs](../../img/Gear.png)
-          </section>
-
-          <section data-markdown>
-            ## Open data is messy
-
-            <pre>
+    <pre>
 C00000042|ILLINOIS TOOL WORKS FOR BETTER GOVERNMENT COMMITTEE|Michael J. Lynch|3600 W. Lake Avenue||Glenview|IL|60025|U|Q||Q|C|ILLINOIS TOOL WORKS INC|
 C00000059|HALLMARK CARDS PAC|Swarens, Greg|2501 McGee|MD #288|Kansas City|MO|64108|U|Q|UNK|M|C|HALLMARK CARDS INCORPORATED|
 C00000422|AMERICAN MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE|WALKER, KEVIN|25 MASSACHUSETTS AVENUE NW|SUITE 600|WASHINGTON|DC|20001|U|Q||M|M|AMERICAN MEDICAL ASSOCIATION|
@@ -104,41 +90,41 @@ C00000489|D R I V E POLITICAL FUND, CHAPTER 886|RON COBB|3528 WEST RENO||OKLAHOM
 C00000547|KANSAS MEDICAL SOCIETY POLITICAL ACTION COMMITTEE|C. RICHARD BONEBRAKE, M.D.|623 SW 10TH AVE||TOPEKA|KS|66612|U|Q|UNK|Q|T|MEDICAL ASS'N; KANSAS          [AMPAC]|
 C00000638|INDIANA STATE MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE|Kora, M.D., Vidya|322 Canal Walk, Canal Level|.|Indianapolis|IN|46202|U|Q||Q|M|Indiana State Medical Association|
 C00000729|AMERICAN DENTAL POLITICAL ACTION CMTE.|Triftshauser, Roger W|1111 14th Street NW|Suite 1100|Washington|DC|20005|U|Q|UNK|M|T|DENTAL ASS'N; AMERICAN|
-            </pre>
+    </pre>
 
-            Courtesy of [ftp.fec.gov](ftp://ftp.fec.gov)
-          </section>
+    Courtesy of [ftp.fec.gov](ftp://ftp.fec.gov)
+  </section>
 
-          <section data-markdown>
-            ## A downloaded dataset is a stale dataset
+  <section data-markdown>
+    ## A downloaded dataset is a stale dataset
 
-            ![Clock](../../img/Alarm_clock.tif.png)
-          </section>
+    ![Clock](../../img/Alarm_clock.tif.png)
+  </section>
 
-          <section data-markdown>
-            ## Developers don’t want to manage custom datastores
+  <section data-markdown>
+    ## Developers don’t want to manage custom datastores
 
-            ![Hockey Puck](../../img/Database.tif.png)
-          </section>
+    ![Hockey Puck](../../img/Database.tif.png)
+  </section>
 
-          <section data-markdown>
-            ## You want apps to be easily portable
+  <section data-markdown>
+    ## You want apps to be easily portable
 
-            ![Rocket](../../img/Rocket.tif.png)
-          </section>
-        </section>
+    ![Rocket](../../img/Rocket.tif.png)
+  </section>
+</section>
 
-        <section>
-          <section data-markdown>
-            # The Socrata Open Data APIs
+<section>
+  <section data-markdown>
+    # The Socrata Open Data APIs
 
-            ![SODA](../../img/can.png)
-          </section>
+    ![SODA](../../img/can.png)
+  </section>
 
-          <section data-markdown>
-            ## Every dataset, on every Socrata data site
+  <section data-markdown>
+    ## Every dataset, on every Socrata data site
 
-            <pre><code contenteditable>
+    <pre><code contenteditable>
 GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-08-22 15:45'
 [
   {
@@ -154,390 +140,362 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     }
   }
 ]
-            </code></pre>
-          </section>
+    </code></pre>
+  </section>
 
-          <section data-markdown>
-            ## Open, standards-based, non-proprietary
+  <section data-markdown>
+    ## Open, standards-based, non-proprietary
 
-            * Simple, RESTful, APIs for each dataset
-            * SQL-like query syntax
-            * `JSON`, `XML`, `RDF-XML`, `CSV`
-            * Open Source client libraries
-          </section>
-        </section>
+    * Simple, RESTful, APIs for each dataset
+    * SQL-like query syntax
+    * `JSON`, `XML`, `RDF-XML`, `CSV`
+    * Open Source client libraries
+  </section>
+</section>
 
-        <section>
-          <section data-markdown>
-            # The Socrata Consumer APIs
+<section>
+  <section data-markdown>
+    # The Socrata Consumer APIs
 
-            ![Socrata University](../../img/can.png)
-          </section>
+    ![Socrata University](../../img/can.png)
+  </section>
 
-          <section data-markdown>
-            ## RESTful Resources
+  <section data-markdown>
+    ## RESTful Resources
 
-            * Accessed using [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) paradigms
-            * Use standard HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`)
-          </section>
+    * Accessed using [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) paradigms
+    * Use standard HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`)
+  </section>
 
-          <section data-markdown>
-            ## API Endpoints
+  <section data-markdown>
+    ## API Endpoints
 
-            Format:
+    Format:
 
-            <code>https://<span class="greenery">$domain</span>/<span class="toy-store-blue">resource</span>/<span class="golden">$identifier</span>.<span class="blushing-salmon">ext</span></code>
+    <code>https://<span class="greenery">$domain</span>/<span class="toy-store-blue">resource</span>/<span class="golden">$identifier</span>.<span class="blushing-salmon">ext</span></code>
 
-          </section>
+  </section>
 
-          <section data-markdown>
-            ## API Endpoints
+  <section data-markdown>
+    ## API Endpoints
 
-            Example: [Electric Consumption by Zip Code](https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234)
+    Example: [Electric Consumption by Zip Code](https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234)
 
-            <code style="font-size: 0.7em"> https://<span class="greenery">data.city.gov</span>/envir.../elec.../<span style="color: #ffca14">abcd-1234</span> </code>
+    <code style="font-size: 0.7em"> https://<span class="greenery">data.city.gov</span>/envir.../elec.../<span style="color: #ffca14">abcd-1234</span> </code>
 
-            ... becomes ...
+    ... becomes ...
 
-            <code style="font-size: 0.7em">
-              https://<span class="greenery">data.city.gov</span>/<span class="toy-store-blue">resource</span>/<span class="golden">abcd-1234</span>.<span class="blushing-salmon">json</span>
-            </code>
+    <code style="font-size: 0.7em">
+      https://<span class="greenery">data.city.gov</span>/<span class="toy-store-blue">resource</span>/<span class="golden">abcd-1234</span>.<span class="blushing-salmon">json</span>
+    </code>
 
-          </section>
+  </section>
 
-          <section data-markdown>
-            ## Simple Filters
+  <section data-markdown>
+    ## Simple Filters
 
-            <code>
-              /resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
-            </code>
+    <code>
+      /resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
+    </code>
 
-            <pre><code data-trim contenteditable class="javascript">
-  [ {
-    "zipcode" : "10001",
-    "<span class="toy-store-blue">source</span>" : "<span class="golden">ConEd</span>",
-    "location" : {
-      "longitude" : "-73.99688630375988",
-      "latitude" : "40.75025902143676",
-    },
-    "building_type" : "Commercial",
-    "kwh" : "23328498"
-  }, ... ]
-            </code></pre>
-          </section>
+    <pre><code data-trim contenteditable class="javascript">
+[ {
+"zipcode" : "10001",
+"<span class="toy-store-blue">source</span>" : "<span class="golden">ConEd</span>",
+"location" : {
+"longitude" : "-73.99688630375988",
+"latitude" : "40.75025902143676",
+},
+"building_type" : "Commercial",
+"kwh" : "23328498"
+}, ... ]
+    </code></pre>
+  </section>
 
-          <section data-markdown>
-            ## SoQL Queries
+  <section data-markdown>
+    ## SoQL Queries
 
-            <code>
-              /resource/abcd-1234.json?<br/>
-                <span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
-            </code>
+    <code>
+      /resource/abcd-1234.json?<br/>
+        <span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
+    </code>
 
-            <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
-          </section>
+    <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+  </section>
 
-          <section data-markdown>
-            ## Aggregating Data
+  <section data-markdown>
+    ## Aggregating Data
 
-            <code>
-              /resource/abcd-1234.json?<br/>
-                <span class="toy-store-blue">$select</span>=<span class="golden">source, sum(kwh)</span><br>
-                &amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
-            </code>
+    <code>
+      /resource/abcd-1234.json?<br/>
+        <span class="toy-store-blue">$select</span>=<span class="golden">source, sum(kwh)</span><br>
+        &amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
+    </code>
 
-            <pre><code data-trim contenteditable class="javascript">
-  [ {
-    "source" : "ConEd",
-    "sum_kwh" : "49469570957"
-  }, {
-    "source" : "Long Island Power Authority",
-    "sum_kwh" : "445333629"
-  }, ... ]
-            </code></pre>
-          </section>
+    <pre><code data-trim contenteditable class="javascript">
+[ {
+"source" : "ConEd",
+"sum_kwh" : "49469570957"
+}, {
+"source" : "Long Island Power Authority",
+"sum_kwh" : "445333629"
+}, ... ]
+    </code></pre>
+  </section>
 
-          <section data-markdown>
-            ## Limiting Output
+  <section data-markdown>
+    ## Limiting Output
 
-            <code>
-              /resource/abcd-1234.json?<br />
-                <span class="toy-store-blue">$limit</span>=<span class="golden">5</span>
-            </code>
-          </section>
+    <code>
+      /resource/abcd-1234.json?<br />
+        <span class="toy-store-blue">$limit</span>=<span class="golden">5</span>
+    </code>
+  </section>
 
-          <section data-markdown>
-            ## Paging Through Data
+  <section data-markdown>
+    ## Paging Through Data
 
-            <code contenteditable>
-              /resource/abcd-1234.json?<br/>
-              <span class="toy-store-blue">$limit</span>=<span class="golden">50</span><br/>
-                &amp;<span class="toy-store-blue">$offset</span>=<span class="golden">100</span>
-            </code>
-          </section>
-          
-          <section data-markdown>
-            ## Application Tokens
+    <code contenteditable>
+      /resource/abcd-1234.json?<br/>
+      <span class="toy-store-blue">$limit</span>=<span class="golden">50</span><br/>
+        &amp;<span class="toy-store-blue">$offset</span>=<span class="golden">100</span>
+    </code>
+  </section>
 
-            1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
-            2. Include as:
-              - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
-              - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
-            3. Profit!!! (from more API requests)
+  <section data-markdown>
+    ## Application Tokens
 
-          </section>
+    1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
+    2. Include as:
+      - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ...
+      - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
+    3. Profit!!! (from more API requests)
 
-          <section data-markdown>
-            ## Open Source Code
+  </section>
 
-            * Libraries in: 
-              * Ruby
-              * Java
-              * Scala
-              * ObjectiveC / iOS
-            * Our entire backend stack
-            * ... and more!
+  <section data-markdown>
+    ## Open Source Code
 
-            <img src="../../img/socrata-heart-opensource.png"/>
+    * Libraries in:
+      * Ruby
+      * Java
+      * Scala
+      * ObjectiveC / iOS
+    * Our entire backend stack
+    * ... and more!
 
-            ### [http://github.com/socrata](http://github.com/socrata)
-          </section>
-        </section>
+    <img src="../../img/socrata-heart-opensource.png"/>
 
-        <section>
-          <section data-markdown>
-            # API Foundry
+    ### [http://github.com/socrata](http://github.com/socrata)
+  </section>
+</section>
 
-            ![Gear!](../../img/Gear.png)
-          </section>
+<section>
+  <section data-markdown>
+    # API Foundry
 
-          <section data-markdown>
-            ## API Foundry
+    ![Gear!](../../img/Gear.png)
+  </section>
 
-            The best way of making your API deployment effort successful rapidly and easily:
+  <section data-markdown>
+    ## API Foundry
 
-            * Create a customized, friendly API
-            * Custom documentation and code samples automatically created
-            * Powerful API management and throttling tools
+    The best way of making your API deployment effort successful rapidly and easily:
 
-            [http://www.socrata.com/api-foundry/](http://www.socrata.com/api-foundry/)
-          </section>
+    * Create a customized, friendly API
+    * Custom documentation and code samples automatically created
+    * Powerful API management and throttling tools
 
-          <section data-markdown>
-            # Demo!
+    [http://www.socrata.com/api-foundry/](http://www.socrata.com/api-foundry/)
+  </section>
 
-            ![Experiment](../../img/Pipette.tif.png)
-          </section>
-        </section>
-        
-        <section>
-          <section data-markdown>
-            # Publishing Strategies
+  <section data-markdown>
+    # Demo!
 
-            ![Strategies](../../img/Notebook.tif.png)
-          </section>
+    ![Experiment](../../img/Pipette.tif.png)
+  </section>
+</section>
 
-          <section data-markdown>
-            ## Archival Dataset?
-            ## Infrequent Changes?
+<section>
+  <section data-markdown>
+    # Publishing Strategies
 
-            <span class="fragment" data-fragment-index=0>There's no need for an API integration. Use the web tools!<span>
-          </section>
+    ![Strategies](../../img/Notebook.tif.png)
+  </section>
 
-          <section data-markdown>
-            ## Daily or Weekly Updates?
-            ## Complete replacement?
-            ## Comes from an ETL system?
+  <section data-markdown>
+    ## Archival Dataset?
+    ## Infrequent Changes?
 
-            <span class="fragment" data-fragment-index=0>Use the bulk replace API or the FTP Dropbox<span>
-          </section>
+    <span class="fragment" data-fragment-index=0>There's no need for an API integration. Use the web tools!<span>
+  </section>
 
-          <section data-markdown>
-            ## Real-time updates?
-            ## Data that morphs over time?
+  <section data-markdown>
+    ## Daily or Weekly Updates?
+    ## Complete replacement?
+    ## Comes from an ETL system?
 
-            <span class="fragment" data-fragment-index=0>Use the RESTful API<span>
-          </section>
-        </section>
+    <span class="fragment" data-fragment-index=0>Use the bulk replace API or the FTP Dropbox<span>
+  </section>
 
-        <section>
-          <section data-markdown>
-            # The Socrata Publisher APIs
+  <section data-markdown>
+    ## Real-time updates?
+    ## Data that morphs over time?
 
-            ![Gear!](../../img/Gear.png)
-          </section>
+    <span class="fragment" data-fragment-index=0>Use the RESTful API<span>
+  </section>
 
-          <section data-markdown>
-            ## Overview
+  <section data-markdown>
+    ## Don't have in-house developers?
+    ## Prefer an off-the-shelf solution?
 
-            Follows the same paradigms as the consumer APIs:
+    <span class="fragment" data-fragment-index=0>
+      <p>Use the <a href="http://www.safe.com/">Safe Software's FME Product</a> or <a href="http://support.socrata.com/entries/24241271-Setting-up-a-basic-DataSync-job">Socrata DataSync</a></p>
+      <p><small style="padding-top: 5em">For more details attend the <a href="http://discover.socrata.com/SocrataUniversity.html">Socrata Integration</a> course</small></p>
+    </span>
+  </section>
+</section>
 
-            * Same `REST`ful endpoint as the dataset
-            * Supports `JSON`, `XML`, `CSV`, etc.
-            * Bulk and metadata update interfaces also available
-          </section>
+<section>
+  <section data-markdown>
+    # The Socrata Publisher APIs
 
-          <section data-markdown>
-            ## Example: Adding a new fire 911 report
+    ![Gear!](../../img/Gear.png)
+  </section>
 
-            <pre><code contenteditable>
+  <section data-markdown>
+    ## Overview
+
+    Follows the same paradigms as the consumer APIs:
+
+    * Same `REST`ful endpoint as the dataset
+    * Supports `JSON`, `XML`, `CSV`, etc.
+    * Bulk and metadata update interfaces also available
+  </section>
+
+  <section data-markdown>
+    ## Example: Adding a new fire 911 report
+
+    <pre><code contenteditable>
 POST https://data.seattle.gov/resource/kzjm-xkqj.json
 Content-type: application/json
 Authorization: Basic [REDACTED]
 X-App-Token: CGxaHQoQlgQSev4zyUh5aR5J3
 [
-  {
-    "address": "1402 E Pike St",
-    "longitude": "-122.314118",
-    "latitude": "47.614121",
-    "incident_number": "F120079189",
-    "datetime": 1345675560,
-    "type": "Motor Vehicle Accident",
-    "report_location": {
-      "longitude": "-122.314118",
-      "latitude": "47.614121"
-    }
-  }
+{
+"address": "1402 E Pike St",
+"longitude": "-122.314118",
+"latitude": "47.614121",
+"incident_number": "F120079189",
+"datetime": 1345675560,
+"type": "Motor Vehicle Accident",
+"report_location": {
+"longitude": "-122.314118",
+"latitude": "47.614121"
+}
+}
 ]
-            </code></pre>
+    </code></pre>
 
-          </section>
+  </section>
 
-          <section data-markdown>
-            ## Publisher Client Libraries
+  <section data-markdown>
+    ## Publisher Client Libraries
 
-            Libraries or examples available for:
+    Libraries or examples available for:
 
-            * [Java](https://github.com/socrata/soda-java)
-            * [Scala](https://github.com/socrata/soda-scala)
-            * [Ruby](https://github.com/socrata/soda-ruby)
-            * More coming soon...
+    * [Java](https://github.com/socrata/soda-java)
+    * [Scala](https://github.com/socrata/soda-scala)
+    * [Ruby](https://github.com/socrata/soda-ruby)
+    * More coming soon...
 
-            [http://github.com/socrata](http://github.com/socrata)
-          </section>
-        </section>
+    [http://github.com/socrata](http://github.com/socrata)
+  </section>
+</section>
 
-        <section>
-          <section data-markdown>
-            # Coming Soon!
+<section>
+  <section data-markdown>
+    # Other Resources
 
-            ![Gear!](../../img/Rocket.tif.png)
-          </section>
+    ![Gear!](../../img/Rocket.tif.png)
+  </section>
 
-          <section data-markdown>
-            ## Socrata Labs
+  <section data-markdown>
+    ## Hackathon-in-a-Box
 
-            ![Beaker](../../img/beaker.png)
+    ![Box](../../img/Box.tif.png)
 
-            [http://labs.socrata.com](http://labs.socrata.com)
-          </section>
+    [http://hackathon-in-a-box.org](http://hackathon-in-a-box.org)
+  </section>
 
-          <section data-markdown>
-            ## Hackathon-in-a-Box
+  <section data-markdown>
+    ## Native SDKs
 
-            ![Box](../../img/Box.tif.png)
+    ![Apple](../../img/apple.png)![Android](../../img/android.png)
+  </section>
+</section>
 
-            [http://hackathon-in-a-box.org](http://hackathon-in-a-box.org)
-          </section>
+<section>
+  <section data-markdown>
+    # Getting help
 
-          <section data-markdown>
-            ## Native SDKs
+    ![Questions](../../img/Question.tif.png)
 
-            ![Apple](../../img/apple.png)![Android](../../img/android.png)
-          </section>
-        </section>
+  </section>
 
-        <section>
-          <section data-markdown>
-            # Getting help
+  <section data-markdown>
+    ## Developer portal
 
-            ![Questions](../../img/Question.tif.png)
+    ![dev.socrata.com](../../img/dev_socrata_com.png)
 
-          </section>
+    <span class="giant">
+      [http://dev.socrata.com](http://dev.socrata.com)
+    </span>
+  </section>
 
-          <section data-markdown>
-            ## Developer portal
+  <section data-markdown>
+    ## Get Support
 
-            ![dev.socrata.com](../../img/dev_socrata_com.png)
+    ![Get Support](../../img/Question.tif.png)
 
-            <span class="giant">
-              [http://dev.socrata.com](http://dev.socrata.com)
-            </span>
-          </section>
+    <span class="giant">
+      [http://support.socrata.com](http://support.socrata.com)
+    </span>
+  </section>
 
-          <section data-markdown>
-            ## Get Support
+</section>
 
-            ![Get Support](../../img/Question.tif.png)
+<section data-markdown>
+  ## Contact Me
 
-            <span class="giant">
-              [http://support.socrata.com](http://support.socrata.com)
-            </span>
-          </section>
+  <span class="giant">
+    [chris.metcalf@socrata.com](mailto:chris.metcalf@socrata.com)
+  </span>
 
-        </section>
+  <span class="giant">
+    [support@socrata.com](mailto:support@socrata.com)
+  </span>
 
-        <section data-markdown>
-          ## Contact Me
+  <span class="giant">
+    [@chrismetcalf](http://twitter.com/chrismetcalf)
+  </span>
 
-          <span class="giant">
-            [chris.metcalf@socrata.com](mailto:chris.metcalf@socrata.com)
-          </span>
+  ![Reach Out!](../../img/Speaker.tif.png)
+</section>
 
-          <span class="giant">
-            [support@socrata.com](mailto:support@socrata.com)
-          </span>
+<section data-markdown>
+  # Questions?
 
-          <span class="giant">
-            [@chrismetcalf](http://twitter.com/chrismetcalf)
-          </span>
+  ![Questions?](../../img/Question.tif.png)
+</section>
 
-          ![Reach Out!](../../img/Speaker.tif.png)
-        </section>
+<section data-markdown>
+  # Thanks!
 
-        <section data-markdown>
-          # Questions?
+  ![Moustaches!](../../img/moustaches.jpg)
+</section>
 
-          ![Questions?](../../img/Question.tif.png)
-        </section>
-
-        <section data-markdown>
-          # Thanks!
-
-          ![Moustaches!](../../img/moustaches.jpg)
-        </section>
-
-        <section data-markdown>
-          ## Powered by
-          # [reveal.js](http://lab.hakim.se/reveal-js/)
-        </section>
-      </div>
-    </div>
-
-    <script src="../../lib/reveal.js/lib/js/head.min.js"></script>
-    <script src="../../lib/reveal.js/js/reveal.min.js"></script>
-
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
-          { src:'../../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src:'../../lib/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector('[data-markdown]' ); } },
-          { src:'../../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]' ); } },
-          { src:'../../lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src:'../../lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src:'../../lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
-    </script>
-  </body>
-</html>
+<section data-markdown>
+  ## Powered by
+  # [reveal.js](http://lab.hakim.se/reveal-js/)
+</section>
