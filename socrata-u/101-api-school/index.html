@@ -22,18 +22,18 @@ description: An introduciton to the Socrata Open Data APIs
     ![APIs](../../img/socrata-white.png)
   </section>
 
-  <section data-markdown>
+  <section>
     <h2>We build <span class="toy-store-blue">software</span> to make <span class="blushing-salmon">data</span> useful to <span class="golden">more people</span> in the ways that are <span class="greenery">most useful to them</span>.</h2>
   </section>
 
-  <section data-markdown>
+  <section>
     <a href="http://www.flickr.com/photos/rywalters/3041058360/"><img src="../../img/seattle.jpg" /></a>
     <span class="fragment" data-fragment-index=0><a href="http://www.flickr.com/photos/crazygeorge/4638880464/"><img src="../../img/dc.jpg"/></a></span>
     <span class="fragment" data-fragment-index=1><a href="http://www.flickr.com/photos/33793776@N07/4171252472/"><img src="../../img/sf.jpg"/></a></span>
     <span class="fragment" data-fragment-index=2><a href="http://www.flickr.com/photos/furyksx/392535958/"><img src="../../img/london.jpg"/></a></span>
   </section>
 
-  <section data-markdown>
+  <section>
     {% include customers.html %}
   </section>
 </section>
@@ -45,7 +45,7 @@ description: An introduciton to the Socrata Open Data APIs
     ![APIs](../../img/Bubble_blue.tif.png)
   </section>
 
-  <section data-markdown>
+  <section>
     <div style="text-align: left; font-size: 3em; line-height: 1.1em">
       <span class="blushing-salmon">A</span>pplication<br/>
       <span class="fragment" data-fragment-index=0><span class="toy-store-blue">P</span>rogramming<br/></span>
@@ -53,20 +53,20 @@ description: An introduciton to the Socrata Open Data APIs
     </div>
   </section>
 
-  <section data-markdown>
-    # Common Language
+  <section>
+    <h1>Common Language</h1>
 
     A <span class="blushing-salmon">consistent</span> way for <span class="toy-store-blue">two software systems</span> to <span class="golden">communicate</span>.
   </section>
 
-  <section data-markdown>
-    # Stable Platform
+  <section>
+    <h1>Stable Platform</h1>
 
     A <span class="blushing-salmon">guarantee</span> that the <span class="toy-store-blue">language</span> will not <span class="golden">change</span> without notice.
   </section>
 
-  <section data-markdown>
-    # Contract
+  <section>
+    <h1>Contract</h1>
 
     An API is a <span class="blushing-salmon">contract</span> between a <span class="toy-store-blue">provider</span> and a <span class="golden">consumer</span>.
   </section>
@@ -79,8 +79,8 @@ description: An introduciton to the Socrata Open Data APIs
     ![APIs](../../img/Gear.png)
   </section>
 
-  <section data-markdown>
-    ## Open data is messy
+  <section>
+    <h2>Open data is messy</h2>
 
     <pre>
 C00000042|ILLINOIS TOOL WORKS FOR BETTER GOVERNMENT COMMITTEE|Michael J. Lynch|3600 W. Lake Avenue||Glenview|IL|60025|U|Q||Q|C|ILLINOIS TOOL WORKS INC|
@@ -92,7 +92,7 @@ C00000638|INDIANA STATE MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE|Kora, M.D
 C00000729|AMERICAN DENTAL POLITICAL ACTION CMTE.|Triftshauser, Roger W|1111 14th Street NW|Suite 1100|Washington|DC|20005|U|Q|UNK|M|T|DENTAL ASS'N; AMERICAN|
     </pre>
 
-    Courtesy of [ftp.fec.gov](ftp://ftp.fec.gov)
+    Courtesy of <a href="ftp://ftp.fec.gov">ftp.fec.gov</a>
   </section>
 
   <section data-markdown>
@@ -121,8 +121,8 @@ C00000729|AMERICAN DENTAL POLITICAL ACTION CMTE.|Triftshauser, Roger W|1111 14th
     ![SODA](../../img/can.png)
   </section>
 
-  <section data-markdown>
-    ## Every dataset, on every Socrata data site
+  <section>
+    <h2>Every dataset, on every Socrata data site</h2>
 
     <pre><code contenteditable>
 GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-08-22 15:45'
@@ -167,8 +167,8 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     * Use standard HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`)
   </section>
 
-  <section data-markdown>
-    ## API Endpoints
+  <section>
+    <h2>API Endpoints</h2>
 
     Format:
 
@@ -176,10 +176,10 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
 
   </section>
 
-  <section data-markdown>
-    ## API Endpoints
+  <section>
+    <h2>API Endpoints</h2>
 
-    Example: [Electric Consumption by Zip Code](https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234)
+    Example: <a href="https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234">Electric Consumption by Zip Code</a>
 
     <code style="font-size: 0.7em"> https://<span class="greenery">data.city.gov</span>/envir.../elec.../<span style="color: #ffca14">abcd-1234</span> </code>
 
@@ -191,40 +191,39 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
 
   </section>
 
-  <section data-markdown>
-    ## Simple Filters
+  <section>
+    <h2>Simple Filters</h2>
 
     <code>
       /resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
     </code>
 
-    <pre><code data-trim contenteditable class="javascript">
+    <pre>
 [ {
-"zipcode" : "10001",
-"<span class="toy-store-blue">source</span>" : "<span class="golden">ConEd</span>",
-"location" : {
-"longitude" : "-73.99688630375988",
-"latitude" : "40.75025902143676",
-},
-"building_type" : "Commercial",
-"kwh" : "23328498"
+  "zipcode" : "10001",
+  "<span class="toy-store-blue">source</span>" : "<span class="golden">ConEd</span>",
+  "location" : {
+    "longitude" : "-73.99688630375988",
+    "latitude" : "40.75025902143676",
+  },
+  "building_type" : "Commercial",
+  "kwh" : "23328498"
 }, ... ]
-    </code></pre>
+    </pre>
   </section>
 
-  <section data-markdown>
-    ## SoQL Queries
+  <section>
+    <h2>SoQL Queries</h2>
 
     <code>
-      /resource/abcd-1234.json?<br/>
-        <span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
+      /resource/abcd-1234.json?<span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
     </code>
 
     <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
   </section>
 
-  <section data-markdown>
-    ## Aggregating Data
+  <section>
+    <h2>Aggregating Data</h2>
 
     <code>
       /resource/abcd-1234.json?<br/>
@@ -232,19 +231,19 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
         &amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
     </code>
 
-    <pre><code data-trim contenteditable class="javascript">
+    <pre>
 [ {
-"source" : "ConEd",
-"sum_kwh" : "49469570957"
+  "source" : "ConEd",
+  "sum_kwh" : "49469570957"
 }, {
-"source" : "Long Island Power Authority",
-"sum_kwh" : "445333629"
+  "source" : "Long Island Power Authority",
+  "sum_kwh" : "445333629"
 }, ... ]
-    </code></pre>
+    </pre>
   </section>
 
-  <section data-markdown>
-    ## Limiting Output
+  <section>
+    <h2>Limiting Output</h2>
 
     <code>
       /resource/abcd-1234.json?<br />
@@ -252,8 +251,8 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     </code>
   </section>
 
-  <section data-markdown>
-    ## Paging Through Data
+  <section>
+    <h2>Paging Through Data</h2>
 
     <code contenteditable>
       /resource/abcd-1234.json?<br/>
@@ -262,14 +261,18 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     </code>
   </section>
 
-  <section data-markdown>
-    ## Application Tokens
+  <section>
+    <h2>Application Tokens</h2>
 
-    1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
-    2. Include as:
-      - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ...
-      - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
-    3. Profit!!! (from more API requests)
+    <ol>
+      <li>Register at http://dev.socrata.com/register</li>
+      <li>Include as:
+      <ul>
+        <li><code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ...</li>
+        <li>The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter</li>
+      </ul></li>
+      <li>Profit!!! (from more API requests)</li>
+    </ol>
 
   </section>
 
@@ -284,7 +287,7 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     * Our entire backend stack
     * ... and more!
 
-    <img src="../../img/socrata-heart-opensource.png"/>
+    ![opensource](/presentations/img/socrata-heart-opensource.png)
 
     ### [http://github.com/socrata](http://github.com/socrata)
   </section>
@@ -373,8 +376,8 @@ GET https://data.seattle.gov/resource/fire-911.json?$where=datetime &gt; '2012-0
     * Bulk and metadata update interfaces also available
   </section>
 
-  <section data-markdown>
-    ## Example: Adding a new fire 911 report
+  <section>
+    <h2>Example: Adding a new fire 911 report</h2>
 
     <pre><code contenteditable>
 POST https://data.seattle.gov/resource/kzjm-xkqj.json
@@ -382,18 +385,18 @@ Content-type: application/json
 Authorization: Basic [REDACTED]
 X-App-Token: CGxaHQoQlgQSev4zyUh5aR5J3
 [
-{
-"address": "1402 E Pike St",
-"longitude": "-122.314118",
-"latitude": "47.614121",
-"incident_number": "F120079189",
-"datetime": 1345675560,
-"type": "Motor Vehicle Accident",
-"report_location": {
-"longitude": "-122.314118",
-"latitude": "47.614121"
-}
-}
+  {
+    "address": "1402 E Pike St",
+    "longitude": "-122.314118",
+    "latitude": "47.614121",
+    "incident_number": "F120079189",
+    "datetime": 1345675560,
+    "type": "Motor Vehicle Accident",
+    "report_location": {
+      "longitude": "-122.314118",
+      "latitude": "47.614121"
+    }
+  }
 ]
     </code></pre>
 
