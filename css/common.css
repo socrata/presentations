@@ -10,11 +10,30 @@
   -o-transition: none;
   transition: none; }
 
+/* Background Watermark */
+body::before {
+  content: "";
+  -webkit-mask-box-image: url(/presentations/img/socrata-white-target-watermark.png) 100% 100% 0 0;
+  background: white;
+  position: absolute;
+  opacity: 0.08;
+  height: 30%;
+  width: 7%;
+  left: 91%;
+  top: 2%; }
+
+img.fullscreen-img {
+  display: none; }
+
 .giant {
   font-size: 1.8em; }
 
 .smaller {
   font-size: 0.6em; }
+
+.footnote {
+  font-size: 0.6em !important;
+  padding-top: 6em !important; }
 
 .toy-store-blue {
   color: #12daeb; }

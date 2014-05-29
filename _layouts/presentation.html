@@ -9,17 +9,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/presentations/lib/reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="/presentations/lib/reveal.js/css/theme/default.css">
-    <link rel="stylesheet" href="/presentations/lib/reveal.js/lib/css/zenburn.css">
-    <link rel="stylesheet" href="/presentations/css/common.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="/presentations/lib/reveal.js/css/reveal.min.css" />
+    <link rel="stylesheet" href="/presentations/lib/reveal.js/css/theme/night.css" />
+    <link rel="stylesheet" href="/presentations/lib/reveal.js/lib/css/zenburn.css" />
+    <link rel="stylesheet" href="/presentations/lib/revealjs-fullscreen-img/fullscreen-img.css" />
+    <link rel="stylesheet" href="/presentations/css/common.css" />
+    <link rel="stylesheet" href="custom.css" />
 
     <script>
       // If the query includes 'print-pdf' we'll use the PDF print sheet
-      document.write( '<link rel="stylesheet" href="/presentations/lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+      document.write( '<link rel="stylesheet" href="/presentations/lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print" />' );
     </script>
 
     <!--[if lt IE 9]>
@@ -75,6 +76,9 @@
 
           // Remote control your reveal.js presentation using a touch device
           // { src: '/presentations/lib/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+          // Full-bleed images
+          { src: '/presentations/lib/revealjs-fullscreen-img/fullscreen-img.js', async: true }
         ]
       });
     </script>
