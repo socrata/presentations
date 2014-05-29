@@ -49,6 +49,8 @@ Format:
 
 <code>https://<span class="greenery">$domain</span>/resource/<span class="golden">$identifier</span>.<span class="blushing-salmon">$ext</span></code>
 
+<div class="footnote">For more info: <a href="http://dev.socrata.com/docs/endpoints.html">dev.socrata.com/docs/endpoints.html</a></div>
+
 ---
 
 ### In the Data Catalog
@@ -66,13 +68,13 @@ Format:
 <pre><code data-trim contenteditable class="javascript">
 [ {
   "zipcode" : "10001",
-    "source" : "ConEd",
-    "location" : {
-      "longitude" : "-73.99688630375988",
-      "latitude" : "40.75025902143676",
-    },
-    "building_type" : "Commercial",
-    "kwh" : "23328498"
+  "source" : "ConEd",
+  "location" : {
+    "longitude" : "-73.99688630375988",
+    "latitude" : "40.75025902143676",
+  },
+  "building_type" : "Commercial",
+  "kwh" : "23328498"
 }, ... ]
 </code></pre>
 
@@ -111,8 +113,6 @@ Format:
 </code>
 
 The default <span class="toy-store-blue">$limit</span> is <span class="golden">1000</span> and <span class="toy-store-blue">$offset</span> starts at <span class="golden">0</span>
-
-
 
 <div class="footnote">For more info: <a href="http://dev.socrata.com/docs/paging.html">dev.socrata.com/docs/paging.html</a></div>
 
