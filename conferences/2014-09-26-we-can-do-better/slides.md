@@ -41,6 +41,14 @@
 
 ---
 
+<img class="fullscreen-img" src="/presentations/img/budget.png" />
+
+---
+
+<img class="fullscreen-img" src="/presentations/img/expenditures.png"/>
+
+---
+
 <img class="fullscreen-img" src="./img/yelp.png" />
 
 ---
@@ -62,6 +70,10 @@
 ---
 
 <img class="fullscreen-img" src="/presentations/img/mcm.png"/>
+
+---
+
+<img class="fullscreen-img" src="/presentations/img/recollect.png"/>
 
 ---
 
