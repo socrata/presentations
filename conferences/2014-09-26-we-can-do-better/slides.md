@@ -160,14 +160,6 @@
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/dog.jpg" />
-
-# Questions?
-
-<!-- https://www.flickr.com/photos/saaste/13150099564 -->
-
-===
-
 <img class="fullscreen-img" src="/presentations/img/maggie.jpg"/>
 
 # Thanks!
