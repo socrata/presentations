@@ -29,7 +29,7 @@
 
 ===
 
-# What has Open Data accomplished?
+# What have we accomplished?
 
 ---
 
