@@ -65,11 +65,11 @@
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/596acres.png"/>
+<img class="fullscreen-img" src="/presentations/img/mcm.png"/>
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/mcm.png"/>
+<img class="fullscreen-img" src="/presentations/img/596acres.png"/>
 
 ---
 
