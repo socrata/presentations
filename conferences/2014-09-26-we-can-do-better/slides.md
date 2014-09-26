@@ -89,12 +89,14 @@
 <img class="fullscreen-img" src="/presentations/img/hackathon.jpg" />
 
 ## Fix the hackathon
+<h3 class="fragment">... because civic hackathons are special</h3>
 
 ---
 
 <img class="fullscreen-img" src="/presentations/img/community_meeting.jpg"/>
 
 ## Involve the community
+<h3 class="fragment">... because they know where the pain is</h3>
 
 <!-- https://www.flickr.com/photos/usacehq/14358340888 -->
 
@@ -103,6 +105,7 @@
 <img class="fullscreen-img" src="/presentations/img/mayor_emmanuel.jpg"/>
 
 ## Work with the government
+<h3 class="fragment">... and push them to do better</h3>
 
 <!-- https://www.flickr.com/photos/juggernautco/5172631566 -->
 
@@ -111,6 +114,7 @@
 <img class="fullscreen-img" src="/presentations/img/shoveling_shit.jpg"/>
 
 ## Clean & sanitize data
+<h3 class="fragment">... because it's hard and it sucks</h3>
 
 <!-- https://www.flickr.com/photos/asplund/14000712061/in/photostream/ -->
 
@@ -119,6 +123,7 @@
 <img class="fullscreen-img" src="/presentations/img/chalkboard.jpg"/>
 
 ## Show your work
+<h3 class="fragment">... and share your code</h3>
 
 ---
 
@@ -161,3 +166,8 @@
 
 <!-- https://www.flickr.com/photos/saaste/13150099564 -->
 
+===
+
+<img class="fullscreen-img" src="/presentations/img/maggie.jpg"/>
+
+# Thanks!
