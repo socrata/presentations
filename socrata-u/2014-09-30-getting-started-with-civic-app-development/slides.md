@@ -272,7 +272,7 @@ The default <span class="toy-store-blue">$limit</span> is <span class="golden">1
 
 <h1 class="fragment stroke-black" data-fragment-index="0">We're hiring!</h1>
 
-<h2 class="fragment stroke-black" data-fragment-index="1"><a href="http://www.socrata.com/careers">www.socrata.com/careers</a></h2>
+<h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/careers">www.socrata.com/careers</a></h2>
 
 ===
 
