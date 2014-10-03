@@ -5,15 +5,26 @@
 
 # Who the heck are you?
 
-![Socrata](/presentations/img/socrata-white.png)
+![Socrata](/presentations/img/socrata-white-medium.png)
 
 ---
+
+<img class="fullscreen-img" src="/presentations/img/at_table.jpg" />
 
 <h2>We build <span class="toy-store-blue">software</span> to make data <span class="blushing-salmon">more useful</span> to <span class="golden">more people</span>.</h2>
 
+<!-- https://www.flickr.com/photos/hyku/2497370097 -->
+--- 
+
+<img class="fullscreen-img" src="/presentations/img/city.jpg" />
+
+<h2>We believe that <span class="toy-store-blue">greater access</span> to <span class="blushing-salmon">public data</span> makes cities <span class="golden">better places to live</span></h2>
+
 ---
 
-[data.edmonton.ca](http://data.edmonton.ca) [finances.worldbank.org](http://finances.worldbank.org) [data.cityofchicago.org](http://data.cityofchicago.org) [data.seattle.gov](http://data.seattle.gov) [data.oregon.gov](http://data.oregon.gov) [data.wa.gov](http://data.wa.gov) [www.metrochicagodata.org](http://www.metrochicagodata.org) [data.cityofboston.gov](http://data.cityofboston.gov) [info.samhsa.gov](http://info.samhsa.gov) [explore.data.gov](http://explore.data.gov) [data.cms.gov](http://data.cms.gov) [data.ok.gov](http://data.ok.gov) [data.nola.gov](http://data.nola.gov) [data.illinois.gov](http://data.illinois.gov) [data.colorado.gov](http://data.colorado.gov) [data.austintexas.gov](http://data.austintexas.gov) [data.undp.org](http://data.undp.org) [www.opendatanyc.com](http://www.opendatanyc.com) [data.mo.gov](http://data.mo.gov) [data.nfpa.org](http://data.nfpa.org) [data.raleighnc.gov](http://data.raleighnc.gov) [dati.lombardia.it](http://dati.lombardia.it) [data.montgomerycountymd.gov](http://data.montgomerycountymd.gov) [data.cityofnewyork.us](http://data.cityofnewyork.us) [data.acgov.org](http://data.acgov.org) [data.baltimorecity.gov](http://data.baltimorecity.gov) [data.energystar.gov](http://data.energystar.gov) [data.somervillema.gov](http://data.somervillema.gov) [data.maryland.gov](http://data.maryland.gov) [data.taxpayer.net](http://data.taxpayer.net) [bronx.lehman.cuny.edu](http://bronx.lehman.cuny.edu) [data.hawaii.gov](http://data.hawaii.gov) [data.sfgov.org](http://data.sfgov.org) [data.cityofmadison.com](http://data.cityofmadison.com) [healthmeasures.aspe.hhs.gov](http://healthmeasures.aspe.hhs.gov) [data.weatherfordtx.gov](http://data.weatherfordtx.gov) [www.data.act.gov.au](http://www.data.act.gov.au) [data.wellingtonfl.gov](http://data.wellingtonfl.gov) [data.honolulu.gov](http://data.honolulu.gov) [data.kcmo.org](http://data.kcmo.org) [data2020.abtassociates.com](http://data2020.abtassociates.com) [data.ny.gov](http://data.ny.gov) [health.data.ny.gov](http://health.data.ny.gov) 
+<img class="fullscreen-img" src="/presentations/img/city_hall.jpg" />
+
+<h2>We make it <span class="toy-store-blue">easy</span> for <span class="blushing-salmon">governments</span> to share their public data with <span class="golden">civic developers</span></h2>
 
 ===
 
@@ -26,6 +37,7 @@
 ## Finding Data
 
 ### [communities.socrata.com](https://communities.socrata.com/)
+### [dev.socrata.com/data](http://dev.socrata.com/data/)
 
 ---
 
@@ -37,17 +49,9 @@ Format:
 
 ---
 
-## API Endpoints
+### In the Data Catalog
 
-Example: [Electric Consumption by Zip Code](https://data.city.gov/Environmental-Sustainability/Electric-Consumption-by-ZIP-Code-2010/abcd-1234)
-
-<code style="font-size: 0.7em"> https://<span class="greenery">data.city.gov</span>/envir.../elec.../<span style="color: #ffca14">abcd-1234</span> </code>
-
-... becomes ...
-
-<code style="font-size: 0.7em">
-https://<span class="greenery">data.city.gov</span>/<span class="toy-store-blue">resource</span>/<span class="golden">abcd-1234</span>.<span class="blushing-salmon">json</span>
-</code>
+![API Sidebar](/presentations/img/sidebar.gif)
 
 ---
 
@@ -125,54 +129,50 @@ https://<span class="greenery">data.city.gov</span>/<span class="toy-store-blue"
 
 # Help!
 
-![Questions](../../img/Question.tif.png)
-
 ---
 
 ## Developer Portal
 
-![Developer Portal](../../img/Info.tif.png)
+# [dev.socrata.com](http://dev.socrata.com)
 
-[http://beta.dev.socrata.com](http://beta.dev.socrata.com)
+<div class="footnote">Community powered! Learn how to <a href="http://dev.socrata.com/contributing.html">contribute</a>.</div>
 
-File issues and pull requests!
+--- 
 
-<http://github.com/socrata/dev.socrata.com>
+## Getting Help
+
+![Getting Help](/presentations/img/live-support.gif)
+
+- In person many events
+- IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
+- Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
 
 ---
 
-## Open Source Code
-
-Libraries in: 
-
-* Ruby
-* Java
-* Scala
-* ObjectiveC / iOS
-* Our entire backend stack
-* ... and more!
+## Libraries & SDKs
 
 <img src="../../img/socrata-heart-opensource.png"/>
 
-### [http://github.com/socrata](http://github.com/socrata)
+### [dev.socrata.com/libraries/](http://dev.socrata.com/libraries/)
+
+<div class="footnote"><a href="http://socrata.github.io/soda-ruby/">Ruby</a>, <a href="https://github.com/socrata/soda-scala">Scala</a>, <a href="http://socrata.github.io/soda-java/">Java</a>, <a href="https://github.com/socrata/soda-ios-sdk">ObjectiveC</a>, <a href="https://github.com/Chicago/RSocrata">R</a>, <a href="https://github.com/socrata/soda-swift">Swift</a>, etc.</div>
 
 ===
+
+<img class="fullscreen-img" src="/presentations/img/team.jpg" />
 
 ## One more thing...
 
 <h1 class="fragment" data-fragment-index="0">We're hiring!</h1>
 
-<h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/jobs">www.socrata.com/jobs</a></h2>
-
-<div class="fragment" data-fragment-index="1">
-  <img src="img/work_tounge.gif"/>
-</div>
+<h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/careers">www.socrata.com/careers</a></h2>
 
 ===
 
-# Thanks!
 
-![Grat-zee!](img/grat-zee.gif)
+<img class="fullscreen-img" src="/presentations/img/maggie.jpg"/>
+
+# Thanks!
 
 ===
 
