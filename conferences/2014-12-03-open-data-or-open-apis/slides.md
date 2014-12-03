@@ -20,8 +20,6 @@
 
 ===
 
-# Who the heck are you?
-
 ![Socrata](/presentations/img/socrata-white-medium.png)
 
 ---
@@ -47,6 +45,8 @@
 ---
 
 # Open Data
+
+<p class="fragment">"Open data and content can be freely used, modified, and shared by anyone for any purpose" - <a href="http://opendefinition.org/">opendefinition.org</a></p>
 
 ===
 
