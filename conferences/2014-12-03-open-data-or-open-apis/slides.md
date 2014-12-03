@@ -6,12 +6,6 @@
 
 ===
 
-# Who the heck are you?
-
-![Socrata](/presentations/img/socrata-white-medium.png)
-
----
-
 ![Hey Ladies!](/presentations/img/metcalf.jpg)
 
 <h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> chrismetcalf</h3>
