@@ -59,7 +59,7 @@
 
 <img class="fullscreen-img" src="/presentations/img/community_meeting.jpg" />
 
-## To help both <span class="toy-store-blue">citizens</span> and <span class="blushing-salmon">citizens</span> make <span class="golden">data-driven decisions</span>
+## To help both <span class="toy-store-blue">citizens</span> and <span class="blushing-salmon">governments</span> make <span class="golden">data-driven decisions</span>
 
 ---
 
