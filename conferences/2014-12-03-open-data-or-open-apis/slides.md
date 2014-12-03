@@ -65,7 +65,7 @@
 
 <img class="fullscreen-img" src="/presentations/img/community_meeting.jpg" />
 
-## Because it's the <span class="toy-store-blue">right thing to do</span>
+## To help both <span class="toy-store-blue">citizens</span> and <span class="blushing-salmon">citizens</span> make <span class="golden">data-driven decisions</span>
 
 ---
 
@@ -156,20 +156,22 @@
 
 <img class="fullscreen-img" src="/presentations/img/books.jpg"/>
 
-# Open your API specification
+# Open your <span class="blushing-salmon">API specification</span>
 ## [![API Commons](/presentations/img/api-commons-logo.png)](http://apicommons.org)
 
 ---
 
 <img class="fullscreen-img" src="/presentations/img/suitcases.jpg"/>
 
-# Let your users keep their data
+# Let your users <span class="toy-store-blue">keep their data</span>
 
 ---
 
 <img class="fullscreen-img" src="/presentations/img/handshake.jpg" />
 
-# Create a partner data program
+# Create a <span class="golden">partner data program</span>
+
+<p class="footnote"><sup>&lowast;</sup>Example: <a href="http://ebay.com/marketplace_research">Ebay Market Research</a></p>
 
 ===
 
@@ -181,7 +183,7 @@
 
 # We're hiring
 
-<h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/careers">www.socrata.com/careers</a></h2>
+## <a href="http://www.socrata.com/careers">www.socrata.com/careers</a>
 
 ===
 
