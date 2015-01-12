@@ -63,22 +63,22 @@ Format:
 
 <pre><code data-trim contenteditable class="javascript">
 [ {
-  "ucr_1_code" : "1901",
   "case_number" : "5000060",
+  "time_24hr" : "0530",
+  "date" : 1104566400,
+  "ucr_1_code" : "1901",
+  "ucr_1_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "ucr_1_description" : "BREACH-PEACE             ",
+  "ucr_2_code" : "1904",
+  "ucr_2_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "ucr_2_description" : "DOMESTIC",
   "address" : "MAPLE AV &amp; SHULTAS PL",
   "neighborhood" : "BARRY SQUARE        ",
-  "ucr_2_category" : "19* - CRIMES AGAINST THE PUBLIC",
   "geom" : {
     "needs_recoding" : false,
     "longitude" : "-72.6801648596978",
     "latitude" : "41.7480461745503"
-  },
-  "ucr_1_category" : "19* - CRIMES AGAINST THE PUBLIC",
-  "ucr_2_description" : "DOMESTIC",
-  "time_24hr" : "0530",
-  "date" : 1104566400,
-  "ucr_2_code" : "1904",
-  "ucr_1_description" : "BREACH-PEACE             "
+  },  
 }, ... ]
 </code></pre>
 
