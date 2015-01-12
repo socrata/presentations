@@ -58,10 +58,8 @@ Format:
 
 ## Simple Filters
 
-<code>
-http://data.hartford.gov/resource/889t-nwfu.json  
-?<span class="toy-store-blue">ucr_1_category</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span>
-</code>
+<code>http://data.hartford.gov/resource/889t-nwfu.json<code>
+<code><span class="toy-store-blue">ucr_1_category</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span></code>
 
 <pre><code data-trim contenteditable class="javascript">
 [ {
