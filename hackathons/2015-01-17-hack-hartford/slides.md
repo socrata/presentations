@@ -65,14 +65,22 @@ http://data.hartford.gov
 
 <pre><code data-trim contenteditable class="javascript">
 [ {
-  "zipcode" : "10001",
-    "source" : "ConEd",
-    "location" : {
-      "longitude" : "-73.99688630375988",
-      "latitude" : "40.75025902143676",
-    },
-    "building_type" : "Commercial",
-    "kwh" : "23328498"
+  "ucr_1_code" : "1901",
+  "case_number" : "5000060",
+  "address" : "MAPLE AV &amp; SHULTAS PL",
+  "neighborhood" : "BARRY SQUARE        ",
+  "ucr_2_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "geom" : {
+    "needs_recoding" : false,
+    "longitude" : "-72.6801648596978",
+    "latitude" : "41.7480461745503"
+  },
+  "ucr_1_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "ucr_2_description" : "DOMESTIC",
+  "time_24hr" : "0530",
+  "date" : 1104566400,
+  "ucr_2_code" : "1904",
+  "ucr_1_description" : "BREACH-PEACE             "
 }, ... ]
 </code></pre>
 
