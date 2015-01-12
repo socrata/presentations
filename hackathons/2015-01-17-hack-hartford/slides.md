@@ -59,7 +59,8 @@ Format:
 ## Simple Filters
 
 <code>
-/resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
+http://data.hartford.gov
+/resource/889t-nwfu.json?<span class="toy-store-blue">ucr_1_category</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span>
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
