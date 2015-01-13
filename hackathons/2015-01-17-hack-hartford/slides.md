@@ -79,8 +79,8 @@ Format:
     "needs_recoding" : false,
     "longitude" : "-72.6801648596978",
     "latitude" : "41.7480461745503"
-  },  
-}, ... ]
+  }, ...
+]
 </code></pre>
 
 ---
@@ -107,13 +107,18 @@ Format:
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
-[ {
-    "count_case_number": "52659",
-    "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
-}, {
+[
+  {
+      "count_case_number": "52659",
+      "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
+  }, {
     "count_case_number": "52488",
     "ucr_1_category": "19* - CRIMES AGAINST THE PUBLIC"
-}, ... ]
+  }, {
+    "count_case_number": "43045",
+    "ucr_1_category": "06* - LARCENY"
+  }, ...
+]
 </code></pre>
 
 ---
@@ -160,7 +165,7 @@ Format:
 
 ---
 
-## Libraries & SDKs
+## Libraries &amp; SDKs
 
 <img src="../../img/socrata-heart-opensource.png"/>
 
