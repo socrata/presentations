@@ -36,8 +36,9 @@
 
 ## Finding Data
 
-### [data.ct.gov](https://data.ct.gov/)
 ### [data.hartford.gov](https://data.hartford.gov/)
+### [budget.hartford.gov](http://budget.hartford.gov/)
+### [data.ct.gov](https://data.ct.gov/)
 ### [data.atf.gov](https://data.atf.gov/)
 ### [dev.socrata.com/data](http://dev.socrata.com/data/)
 
