@@ -38,6 +38,7 @@
 
 ### [data.ct.gov](https://data.ct.gov/)
 ### [data.hartford.gov](https://data.hartford.gov/)
+### [data.atf.gov](https://data.atf.gov/)
 ### [dev.socrata.com/data](http://dev.socrata.com/data/)
 
 ---
@@ -58,7 +59,7 @@ Format:
 
 ## Simple Filters
 
-<code>http://data.hartford.gov/resource/889t-nwfu.json<code>
+<code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
 <code><span class="toy-store-blue">ucr_1_category</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span></code>
 
 <pre><code data-trim contenteditable class="javascript">
@@ -86,9 +87,11 @@ Format:
 
 ## SoQL Queries
 
+<code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
+<code><span class="toy-store-blue">$where</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span></code>
+
 <code>
-/resource/abcd-1234.json?<br/>
-<span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
+<span class="toy-store-blue">$where</span>=<span class="golden">ucr_1_code &gt;= 400 AND ucr_1_code &lt; 500</span>
 </code>
 
 <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
@@ -99,17 +102,18 @@ Format:
 
 <code>
 /resource/abcd-1234.json?<br/>
-<span class="toy-store-blue">$select</span>=<span class="golden">source, sum(kwh)</span><br>
-&amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
+<span class="toy-store-blue">$select</span>=<span class="golden">ucr_1_category,count(case_number)</span><br>
+&amp;<span class="toy-store-blue">$group</span>=<span class="golden">ucr_1_category</span>
+&amp;<span class="toy-store-blue">$order</span>=<span class="golden">count_case_number DESC</span>
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
 [ {
-  "source" : "ConEd",
-    "sum_kwh" : "49469570957"
+    "count_case_number": "52659",
+    "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
 }, {
-  "source" : "Long Island Power Authority",
-    "sum_kwh" : "445333629"
+    "count_case_number": "52488",
+    "ucr_1_category": "19* - CRIMES AGAINST THE PUBLIC"
 }, ... ]
 </code></pre>
 
@@ -151,7 +155,7 @@ Format:
 
 ![Getting Help](/presentations/img/live-support.gif)
 
-- In person many events
+- In person
 - IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
 - Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
 
