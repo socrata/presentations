@@ -51,7 +51,7 @@ Format:
 
 ### In the Data Catalog
 
-![API Sidebar](/presentations/img/sidebar.gif)
+![API Sidebar](http://dev.socrata.com/img/sidebar.gif)
 
 ---
 
