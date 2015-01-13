@@ -100,8 +100,7 @@ Format:
 
 <code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
 <code>
-<span class="toy-store-blue">$select</span>=<span class="golden">ucr_1_category,count(case_number)</span><b/r>
-&amp;<span class="toy-store-blue">$group</span>=<span class="golden">ucr_1_category</span><br/>&amp;<span class="toy-store-blue">$order</span>=<span class="golden">count_case_number DESC</span>
+<span class="toy-store-blue">$select</span>=<span class="golden">ucr_1_category,count(case_number)</span><br/>&amp;<span class="toy-store-blue">$group</span>=<span class="golden">ucr_1_category</span><br/>&amp;<span class="toy-store-blue">$order</span>=<span class="golden">count_case_number DESC</span>
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
