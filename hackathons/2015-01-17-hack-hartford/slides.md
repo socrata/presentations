@@ -88,8 +88,6 @@ Format:
 ## SoQL Queries
 
 <code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
-<code><span class="toy-store-blue">$where</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span></code>
-
 <code>
 <span class="toy-store-blue">&amp;$where</span>=<span class="golden">ucr_1_code &gt;= 400 AND ucr_1_code &lt; 500</span>
 </code>
@@ -109,8 +107,8 @@ Format:
 <pre><code data-trim contenteditable class="javascript">
 [
   {
-      "count_case_number": "52659",
-      "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
+    "count_case_number": "52659",
+    "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
   }, {
     "count_case_number": "52488",
     "ucr_1_category": "19* - CRIMES AGAINST THE PUBLIC"
