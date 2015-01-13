@@ -64,13 +64,13 @@ Format:
 <pre><code data-trim contenteditable class="javascript">
 [ {
   "zipcode" : "10001",
-    "source" : "ConEd",
-    "location" : {
-      "longitude" : "-73.99688630375988",
-      "latitude" : "40.75025902143676",
-    },
-    "building_type" : "Commercial",
-    "kwh" : "23328498"
+  "source" : "ConEd",
+  "location" : {
+    "longitude" : "-73.99688630375988",
+    "latitude" : "40.75025902143676",
+  },
+  "building_type" : "Commercial",
+  "kwh" : "23328498"
 }, ... ]
 </code></pre>
 
@@ -98,10 +98,10 @@ Format:
 <pre><code data-trim contenteditable class="javascript">
 [ {
   "source" : "ConEd",
-    "sum_kwh" : "49469570957"
+  "sum_kwh" : "49469570957"
 }, {
   "source" : "Long Island Power Authority",
-    "sum_kwh" : "445333629"
+  "sum_kwh" : "445333629"
 }, ... ]
 </code></pre>
 
@@ -149,7 +149,7 @@ Format:
 
 ---
 
-## Libraries & SDKs
+## Libraries &amp; SDKs
 
 <img src="../../img/socrata-heart-opensource.png"/>
 
