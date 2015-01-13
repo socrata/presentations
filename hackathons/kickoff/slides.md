@@ -121,8 +121,8 @@ Format:
 
 1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
 2. Include as:
-- <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
-  - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
+  - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
+  - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> URL parameter
 3. Profit!!! (from more API requests)
 
 ===
