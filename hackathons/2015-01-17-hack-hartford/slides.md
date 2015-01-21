@@ -36,7 +36,10 @@
 
 ## Finding Data
 
-### [communities.socrata.com](https://communities.socrata.com/)
+### [data.hartford.gov](https://data.hartford.gov/)
+### [budget.hartford.gov](http://budget.hartford.gov/)
+### [data.ct.gov](https://data.ct.gov/)
+### [data.atf.gov](https://data.atf.gov/)
 ### [dev.socrata.com/data](http://dev.socrata.com/data/)
 
 ---
@@ -57,30 +60,37 @@ Format:
 
 ## Simple Filters
 
-<code>
-/resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
-</code>
+<code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
+<code><span class="toy-store-blue">ucr_1_category</span>=<span class="golden">19* - CRIMES AGAINST THE PUBLIC</span></code>
 
 <pre><code data-trim contenteditable class="javascript">
 [ {
-  "zipcode" : "10001",
-  "source" : "ConEd",
-  "location" : {
-    "longitude" : "-73.99688630375988",
-    "latitude" : "40.75025902143676",
-  },
-  "building_type" : "Commercial",
-  "kwh" : "23328498"
-}, ... ]
+  "case_number" : "5000060",
+  "time_24hr" : "0530",
+  "date" : 1104566400,
+  "ucr_1_code" : "1901",
+  "ucr_1_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "ucr_1_description" : "BREACH-PEACE             ",
+  "ucr_2_code" : "1904",
+  "ucr_2_category" : "19* - CRIMES AGAINST THE PUBLIC",
+  "ucr_2_description" : "DOMESTIC",
+  "address" : "MAPLE AV &amp; SHULTAS PL",
+  "neighborhood" : "BARRY SQUARE        ",
+  "geom" : {
+    "needs_recoding" : false,
+    "longitude" : "-72.6801648596978",
+    "latitude" : "41.7480461745503"
+  }, ...
+]
 </code></pre>
 
 ---
 
 ## SoQL Queries
 
+<code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
 <code>
-/resource/abcd-1234.json?<br/>
-<span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
+<span class="toy-store-blue">&amp;$where</span>=<span class="golden">ucr_1_code &gt;= 400 AND ucr_1_code &lt; 500</span>
 </code>
 
 <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
@@ -89,20 +99,24 @@ Format:
 
 ## Aggregating Data
 
+<code>http://data.hartford.gov/resource/889t-nwfu.json?<code>
 <code>
-/resource/abcd-1234.json?<br/>
-<span class="toy-store-blue">$select</span>=<span class="golden">source, sum(kwh)</span><br>
-&amp;<span class="toy-store-blue">$group</span>=<span class="golden">source</span>
+<span class="toy-store-blue">$select</span>=<span class="golden">ucr_1_category,count(case_number)</span><br/>&amp;<span class="toy-store-blue">$group</span>=<span class="golden">ucr_1_category</span><br/>&amp;<span class="toy-store-blue">$order</span>=<span class="golden">count_case_number DESC</span>
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
-[ {
-  "source" : "ConEd",
-  "sum_kwh" : "49469570957"
-}, {
-  "source" : "Long Island Power Authority",
-  "sum_kwh" : "445333629"
-}, ... ]
+[
+  {
+    "count_case_number": "52659",
+    "ucr_1_category": "32* - PROPERTY DAMAGE ACCIDENT"
+  }, {
+    "count_case_number": "52488",
+    "ucr_1_category": "19* - CRIMES AGAINST THE PUBLIC"
+  }, {
+    "count_case_number": "43045",
+    "ucr_1_category": "06* - LARCENY"
+  }, ...
+]
 </code></pre>
 
 ---
@@ -143,7 +157,7 @@ Format:
 
 ![Getting Help](/presentations/img/live-support.gif)
 
-- In person many events
+- In person
 - IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
 - Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
 
