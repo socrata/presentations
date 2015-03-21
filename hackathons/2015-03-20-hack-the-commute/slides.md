@@ -164,7 +164,7 @@ Format:
 
 ===
 
-![Socrata Hearts Gov](http://thank-a-govie.com/img/snuf-luv.png)
+![Socrata Hearts Gov](/presentations/img/snuf-luv.png)
 
 [thank-a-govie.com](http://thank-a-govie.com)
 
