@@ -39,7 +39,7 @@
 
 # The Socrata Open Data APIs
 
-![SODA](http://dev.socrata.com/common/img/snuffleupadata.png)
+![SODA](/presentations/img/snuffleupadata.png)
 
 ---
 
