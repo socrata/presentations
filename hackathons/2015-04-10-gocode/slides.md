@@ -111,8 +111,8 @@
 <code>
 /resource/q2qp-xhnj.json?<br/>
 <span class="toy-store-blue">$select</span>=<span class="golden">DATE_TRUNC_YM(datadate) AS month, SUM(hr08) AS total</span><br>
-<span class="toy-store-blue">county</span>=<span class="golden">Denver</span><br>
-<span class="toy-store-blue">$group</span>=<span class="golden">month</span><br>
+&amp;<span class="toy-store-blue">county</span>=<span class="golden">Denver</span><br>
+&amp;<span class="toy-store-blue">$group</span>=<span class="golden">month</span><br>
 </code>
 
 <pre><code data-trim contenteditable class="javascript">
