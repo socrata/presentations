@@ -1,9 +1,7 @@
-
 ## Apps Marketplace
 ### Socrata 2015 Partner Summit
 
 ![Socrata](/presentations/img/hello_world.png)
-
 
 ===
 
@@ -17,7 +15,7 @@
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/at_table.jpg" />
+![](/presentations/img/at_table.jpg)
 
 <h2>We build <span class="toy-store-blue">software</span> to make data <span class="blushing-salmon">more useful</span> to <span class="golden">more people</span>.</h2>
 
@@ -25,13 +23,13 @@
 
 --- 
 
-<img class="fullscreen-img" src="/presentations/img/city.jpg" />
+![](/presentations/img/city.jpg)
 
 <h2>We believe that <span class="toy-store-blue">greater access</span> to <span class="blushing-salmon">public data</span> makes the world <span class="golden">a better place to live</span></h2>
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/city_hall.jpg" />
+![](/presentations/img/city_hall.jpg)
 
 <h2>We make it <span class="toy-store-blue">easy</span> for <span class="blushing-salmon">governments</span> to share open data with <span class="golden">their constituents</span></h2>
 
@@ -45,7 +43,7 @@
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/zillow-screenshot.png"/>
+![](/presentations/img/zillow-screenshot.png)
 
 ---
 
@@ -56,7 +54,7 @@
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/marketplace.png"/>
+![](/presentations/img/marketplace.png)
 
 ---
 
@@ -90,27 +88,27 @@
 
 --- 
 
-<img class="fullscreen-img" src="/presentations/img/seeclickfix.png"/>
+![](/presentations/img/seeclickfix.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/recollect.png"/>
+![](/presentations/img/recollect.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/buildingeye.png"/>
+![](/presentations/img/buildingeye.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/sitecompli.png"/>
+![](/presentations/img/sitecompli.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/payroll.png"/>
+![](/presentations/img/payroll.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/connectors.png"/>
+![](/presentations/img/connectors.png)
 
 ===
 
@@ -166,7 +164,7 @@
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/opendatanetwork.png"/>
+![](/presentations/img/opendatanetwork.png)
 
 ===
 
