@@ -11,19 +11,19 @@
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/rockem.jpg" />
+![](/presentations/img/rockem.jpg)
 
 # <span class="toy-store-blue">Open Data</span> vs. <span class="blushing-salmon">Open APIs</span>
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/safe.jpg" />
+![](/presentations/img/safe.jpg)
 
 # Why is just <span class="toy-store-blue">Open Data</span> not enough?
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/baguette.jpg" />
+![](/presentations/img/baguette.jpg)
 
 ## A <span class="toy-store-blue">downloaded dataset</span> is a <span class="blushing-salmon">stale dataset</span><sup>&lowast;</sup>
 
@@ -31,43 +31,43 @@
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/platform.png" />
+![](/presentations/img/platform.png)
 
 ## Don't make me <span class="toy-store-blue">build my own API</span>
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/bricks.jpg" />
+![](/presentations/img/bricks.jpg)
 
 ## More <span class="blushing-salmon">sustainable</span> and <span class="golden">portable</span>
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/api.jpg" />
+![](/presentations/img/api.jpg)
 
 # Why not just APIs?
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/gate.jpg" />
+![](/presentations/img/gate.jpg)
 
 ## A <span class="golden">gated</span> experience
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/train.jpg" />
+![](/presentations/img/train.jpg)
 
 ## APIs <span class="blushing-salmon">go away</span>
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/hackathon.jpg" />
+![](/presentations/img/hackathon.jpg)
 
 ## You can't anticipate <span class="toy-store-blue">every use case</span>
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/why-not-both.gif" />
+![](/presentations/img/why-not-both.gif)
 
 ## Why not both?
 
@@ -85,11 +85,11 @@
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/opendatanetwork_search.png"/>
+![](/presentations/img/opendatanetwork_search.png)
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/opendatanetwork.png"/>
+![](/presentations/img/opendatanetwork.png)
 
 ---
 
