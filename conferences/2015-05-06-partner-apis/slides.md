@@ -248,7 +248,7 @@ Tools for streamlined integration:
 
 * [Datasync](http://socrata.github.io/datasync/)
 * [Safe FME](http://www.safe.com/)
-* [Petaho Kettle](http://dev.socrata.com/publishers/cookbooks/pentaho-kettle-etl-kit.html)
+* [Pentaho Kettle](http://dev.socrata.com/publishers/cookbooks/pentaho-kettle-etl-kit.html)
 
 ===
 
