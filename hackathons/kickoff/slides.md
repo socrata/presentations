@@ -1,5 +1,6 @@
-![Socrata](/presentations/img/socrata-white-large.png)
 ## <span class="title">Introduction to the SODA APIs</span>
+
+![Socrata](/presentations/img/socrata-white-large.png)
 
 ===
 
@@ -9,20 +10,20 @@
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/at_table.jpg" />
+![Fullscreen](/presentations/img/at_table.jpg)
 
 ## We build _software_ to make data _more useful_ to _more people_
 
 <!-- https://www.flickr.com/photos/hyku/2497370097 -->
 --- 
 
-<img class="fullscreen-img" src="/presentations/img/city.jpg" />
+![Fullscreen](/presentations/img/city.jpg)
 
 <h2>We believe that _greater access_ to _public data_ makes cities _better places to live_</h2>
 
 ---
 
-<img class="fullscreen-img" src="/presentations/img/city_hall.jpg" />
+![Fullscreen](/presentations/img/city_hall.jpg)
 
 <h2>We make it _easy_ for _governments_ to share their public data with _civic developers_</h2>
 
@@ -159,7 +160,7 @@ Format:
 
 ===
 
-<img class="fullscreen-img" src="/presentations/img/team.jpg" />
+![Fullscreen](/presentations/img/team.jpg)
 
 ## One more thing...
 
