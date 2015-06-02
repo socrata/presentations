@@ -1,2 +1,4 @@
 .sass-cache
 public/*
+internal/*
+.bundle/*
