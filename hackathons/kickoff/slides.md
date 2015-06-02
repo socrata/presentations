@@ -138,16 +138,6 @@ Format:
 
 <div class="footnote">Community powered! Learn how to <a href="http://dev.socrata.com/contributing.html">contribute</a>.</div>
 
---- 
-
-## Getting Help
-
-![Getting Help](/presentations/img/live-support.gif)
-
-- In person many events
-- IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
-- Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
-
 ---
 
 ## Libraries &amp; SDKs
@@ -158,23 +148,39 @@ Format:
 
 <div class="footnote"><a href="http://socrata.github.io/soda-ruby/">Ruby</a>, <a href="https://github.com/socrata/soda-scala">Scala</a>, <a href="http://socrata.github.io/soda-java/">Java</a>, <a href="https://github.com/socrata/soda-ios-sdk">ObjectiveC</a>, <a href="https://github.com/Chicago/RSocrata">R</a>, <a href="https://github.com/socrata/soda-swift">Swift</a>, etc.</div>
 
+--- 
+
+## Getting Help
+
+![Getting Help](/presentations/img/live-support.gif)
+
+- Track me down!
+- IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
+- Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
+
 ===
 
-![Fullscreen](/presentations/img/team.jpg)
+![Socrata Hearts Gov](/presentations/img/snuf-luv.png)
+
+[thank-a-govie.com](http://thank-a-govie.com)
+
+===
+
+![Fullscreen](/presentations/img/work_tounge.gif)
 
 ## One more thing...
 
 <h1 class="fragment" data-fragment-index="0">We're hiring!</h1>
 
-<h2 class="fragment" data-fragment-index="1"><a href="http://www.socrata.com/careers">www.socrata.com/careers</a></h2>
+<h2 class="fragment" data-fragment-index="1"><a href="http://careers.socrata.com">careers.socrata.com</a></h2>
 
 ===
 
+![Let's get this party started!](/presentations/img/lets_get_this_party_started.gif)
 
-<img class="fullscreen-img" src="/presentations/img/maggie.jpg"/>
+===
+
+<img class="fullscreen-img" src="/presentations/img/team.jpg"/>
 
 # Thanks!
 
-===
-
-![Let's get this party started!](img/lets_get_this_party_started.gif)
