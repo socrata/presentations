@@ -1,5 +1,5 @@
 ![Socrata](/presentations/img/socrata-white-large.png)
-## Introduction to the SODA APIs
+## <span class="title">Introduction to the SODA APIs</span>
 
 ===
 
@@ -11,20 +11,20 @@
 
 <img class="fullscreen-img" src="/presentations/img/at_table.jpg" />
 
-<h2>We build <span class="toy-store-blue">software</span> to make data <span class="blushing-salmon">more useful</span> to <span class="golden">more people</span>.</h2>
+## We build _software_ to make data _more useful_ to _more people_
 
 <!-- https://www.flickr.com/photos/hyku/2497370097 -->
 --- 
 
 <img class="fullscreen-img" src="/presentations/img/city.jpg" />
 
-<h2>We believe that <span class="toy-store-blue">greater access</span> to <span class="blushing-salmon">public data</span> makes cities <span class="golden">better places to live</span></h2>
+<h2>We believe that _greater access_ to _public data_ makes cities _better places to live_</h2>
 
 ---
 
 <img class="fullscreen-img" src="/presentations/img/city_hall.jpg" />
 
-<h2>We make it <span class="toy-store-blue">easy</span> for <span class="blushing-salmon">governments</span> to share their public data with <span class="golden">civic developers</span></h2>
+<h2>We make it _easy_ for _governments_ to share their public data with _civic developers_</h2>
 
 ===
 
@@ -121,8 +121,8 @@ Format:
 
 1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
 2. Include as:
-  - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
-  - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> URL parameter
+  - `_X-App-Token_: _$token_` HTTP Header or ... 
+  - The `_$$app_token_=_$token_` URL parameter
 3. Profit!!! (from more API requests)
 
 ===

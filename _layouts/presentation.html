@@ -26,7 +26,7 @@
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
+
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -68,6 +68,9 @@
           // Interpret Markdown in <section> elements
           { src: '{{ site.root }}/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ site.root }}/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Random emphasis colors for Markdown
+          { src: '{{ site.root }}/lib/emphasis/emphasis.js' },
 
           // Syntax highlight for <code> elements
           { src: '{{ site.root }}/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
