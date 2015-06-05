@@ -1,6 +1,6 @@
-## <span class="title">Introduction to the SODA APIs</span>
+## Introduction to the Socrata Open Data APIs
 
-![Socrata](/presentations/img/socrata-white-large.png)
+![Hello!](/presentations/img/hello_world_200.png)
 
 ===
 
@@ -38,21 +38,19 @@
 ## Finding Data
 
 ### [communities.socrata.com](https://communities.socrata.com/)
-### [dev.socrata.com/data](http://dev.socrata.com/data/)
-
----
-
-## API Endpoints
-
-Format:
-
-<code>https://<span class="greenery">$domain</span>/<span class="toy-store-blue">resource</span>/<span class="golden">$identifier</span>.<span class="blushing-salmon">ext</span></code>
+### [www.opendatanetwork.com](http://www.opendatanetwork.com)
 
 ---
 
 ### In the Data Catalog
 
 ![API Sidebar](http://dev.socrata.com/img/sidebar.gif)
+
+---
+
+## In Data Lens
+
+![Data Lens](http://dev.socrata.com/img/data_lens.png)
 
 ---
 
@@ -122,8 +120,8 @@ Format:
 
 1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
 2. Include as:
-  - `_X-App-Token_: _$token_` HTTP Header or ... 
-  - The `_$$app_token_=_$token_` URL parameter
+  - _`X-App-Token: $token`_ HTTP Header or ... 
+  - The _`$$app_token=$token`_ URL parameter
 3. Profit!!! (from more API requests)
 
 ===
@@ -155,7 +153,7 @@ Format:
 ![Getting Help](/presentations/img/live-support.gif)
 
 - Track me down!
-- IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
+- IRC: [dev.socrata.com/irc.html](http://dev.socrata.com/irc.html)
 - Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
 
 ===
