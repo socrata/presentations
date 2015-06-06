@@ -1,4 +1,5 @@
-## Introduction to the Socrata Open Data APIs
+## Introduction to the 
+## _Socrata_ _Open Data_ _APIs_
 
 ![Hello!](/presentations/img/hello_world_200.png)
 
