@@ -140,6 +140,14 @@
 
 <div class="footnote">Community powered! Learn how to <a href="http://dev.socrata.com/contributing.html">contribute</a>.</div>
 
+---
+
+## Sample App
+
+[chrismetcalf.github.io/not-the-game-asteroids/](http://chrismetcalf.github.io/not-the-game-asteroids/)
+
+<iframe src="http://chrismetcalf.github.io/not-the-game-asteroids/" width="800" height="500"></iframe>
+
 --- 
 
 ## Getting Help
