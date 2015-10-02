@@ -24,6 +24,11 @@ body::before
   left: 91%
   top: 2%
 
+body.print-pdf
+  color: black !important
+  h1, h2, h3, h4, p, li, .reveal
+    color: black !important
+
 // Hack to hide fullbleed markdown images
 img.fullscreen-img
   display: none
@@ -54,6 +59,12 @@ img.fullscreen-img
 .footnote
   font-size: 0.6em !important
   padding-top: 6em !important
+
+.caption
+  font-size: 0.6em !important
+  position: absolute
+  right: 10px
+  left: 10px
 
 .toy-store-blue
   color: #12daeb
