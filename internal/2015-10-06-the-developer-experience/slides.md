@@ -97,7 +97,7 @@ A <span class="blushing-salmon">consistent</span> way for <span class="toy-store
 
 ---
 
-## <span class="blushing-salmon">S</span><span class="golden">O</span><span class="toy-store-blue">D</span><span class="greenery">A</span> Consumer APIs
+## The <span class="blushing-salmon">S</span><span class="golden">O</span><span class="toy-store-blue">D</span><span class="greenery">A</span> Consumer APIs
 
 
 * Simple, _[REST](http://en.wikipedia.org/wiki/Representational_state_transfer)ful APIs_ for each dataset
@@ -271,21 +271,19 @@ Follows the same paradigms as the consumer APIs:
 
 ---
 
-# Keep me informed!
+# _Keep me informed!_
 
 ---
 
-# Spread the word!
+# _Spread the word!_
 
 ---
 
-# Volunteer!
+# _Volunteer!_
 
 ===
 
 ![Questions?](/presentations/img/question.png)
-
-# Questions?
 
 ===
 
