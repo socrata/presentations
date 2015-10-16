@@ -117,8 +117,8 @@
 
 1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
 2. Include as:
-  - _`X-App-Token: $token`_ HTTP Header or ... 
-  - The _`$$app_token=$token`_ URL parameter
+  - _`X-App-Token: <token>`_ HTTP Header or ... 
+  - The _`$$app_token=<token>`_ URL parameter
 3. Profit!!! (from more API requests)
 
 ===
