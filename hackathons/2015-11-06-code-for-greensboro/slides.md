@@ -63,7 +63,7 @@
 
 ---
 
-## Example: King County Property Parcels
+## Example: Fire Reports
 
 [data.greensboro-nc.gov/.../.../p7u9-tyw6](https://data.greensboro-nc.gov/Government/Fire-Incidents/p7u9-tyw6)
 
@@ -112,9 +112,9 @@
 
 <code>
 /resource/mvwv-8vni.json?<br/>
-<span class="toy-store-blue">$select</span>=<span class="golden">propertyuse, count(*)</span><br>
+<span class="toy-store-blue">$select</span>=<span class="golden">propertyuse, count(&#42;)</span><br>
 <span class="toy-store-blue">&$group</span>=<span class="golden">propertyuse</span><br>
-<span class="toy-store-blue">&$order</span>=<span class="golden">count(*) ASC</span><br>
+<span class="toy-store-blue">&$order</span>=<span class="golden">count(&#42;) ASC</span><br>
 <span class="toy-store-blue">&$limit</span>=<span class="golden">5</span><br>
 </code>
 
