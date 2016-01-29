@@ -1,7 +1,7 @@
 
 ![Hello World](/presentations/img/hello_world_200.png)
 
-## _Civic Hacking_ with the _Socrata_
+## _Civic Hacking_ with _Socrata_
 
 ===
 
