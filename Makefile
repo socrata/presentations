@@ -1,6 +1,15 @@
-link_dir := $(shell mktemp -d /tmp/linkdoc.XXXX)
+jekyll:
+	bundle exec jekyll build
 
-all:
-	jekyll build
-	-tput bel
-	exit 0
+clean:
+	rm -rf public
+
+# Generates a build stamp and plugs it into a file in public
+stamp:
+	echo "SHA: `git rev-parse HEAD`" > ./public/build.txt
+	echo "Date: `date`" >> ./public/build.txt
+
+surge:
+	surge --project ./public --domain https://$(DOMAIN)
+
+all: clean jekyll stamp

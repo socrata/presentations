@@ -1,0 +1,19 @@
+branches:
+  only:
+    - /.*/
+language: ruby
+sudo: false
+cache: bundler
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+rvm:
+- 2.1.1
+bundler_args: "--with test"
+script:
+- make
+after_success:
+- test $TRAVIS_BRANCH == "gh-pages" && test $TRAVIS_PULL_REQUEST == "false" && npm install surge && DOMAIN="socrata-presentations.surge.sh" make surge
+# notifications:
+#   slack:
+#     secure: P6Mce/govM2MEy8RCTZHhG2Mg+2Bmh6d84GXt3lKUGPSv9u5Xww0Ld7K+rh7C5/qxSqQIfCY6m2TbtQbz1IpfuSWpvA9QwANYGr/gyzXFvd6pV8gRValb+juokxmNwjL5JmP8TdaX8IKrUgx9eb26j+0dEUbGLZR/kZfT0CX048=
