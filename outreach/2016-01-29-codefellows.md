@@ -1,3 +1,7 @@
+---
+layout: slides
+title: Civic Hacking @ CodeFellows
+---
 
 ![Hello World](/presentations/img/hello_world_200.png)
 
