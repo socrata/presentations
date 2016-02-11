@@ -241,3 +241,4 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ![Big Shot](https://media0.giphy.com/media/maXkNBpOnqoak/200.gif)
 
+<http://bit.ly/codefellows-socrata>
