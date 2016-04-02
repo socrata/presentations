@@ -99,7 +99,7 @@ custom_css: /presentations/css/gocode.css
 
 ## [CSV](https://dev.socrata.com/docs/formats/csv.html)
 
-<code>/resource/9mid-gqwm.geojson</code>
+<code>/resource/9mid-gqwm.csv</code>
 
 <pre><code data-trim contenteditable class="javascript">
 "buff_dist","collector","comments","datafile","date","primary_wd","pw_contain","pw_cover","road_type","route","row_width","second_wd","shape_stle","sw_contain","sw_cover","the_geom","weedlistca","zone"
@@ -159,15 +159,15 @@ custom_css: /presentations/css/gocode.css
 <http://leafletjs.com/>
 
 ```javascript
-var district_boundary = new L.geoJson();
-district_boundary.addTo(map);
+var weeds = new L.geoJson();
+weeds.addTo(map);
 
 $.ajax({
 dataType: "json",
 url: "https://data.colorado.gov/resource/9mid-gqwm.geojson?%24where=intersects%28the_geom%2C%20%27POLYGON%28%28-105.084228515625%2040.578889762381074%2C-106.3092041015625%2040.02169906387432%2C-108.57513427734375%2039.0750435370803%2C-107.90771484375%2037.27227699984947%2C-104.842529296875%2038.82513198716523%2C-105.084228515625%2040.578889762381074%29%29%27%29",
 success: function(data) {
     $(data.features).each(function(key, data) {
-        district_boundary.addData(data);
+        weeds.addData(data);
     });
 }
 }).error(function() {});
