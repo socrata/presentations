@@ -207,4 +207,4 @@ _One who collaborates with others_ to create, build, and invent open source solu
 ## chris.metcalf@socrata.com
 <h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> chrismetcalf</h3>
 
-<http://bit.ly/gocode-socrata>
+<http://bit.ly/uw-ada-socrata>
