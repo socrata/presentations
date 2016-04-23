@@ -218,4 +218,5 @@ _One who collaborates with others_ to create, build, and invent open source solu
 <h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> chrismetcalf</h3>
 
 <http://bit.ly/space-apps-socrata>
+
 [Background Images](https://www.dropbox.com/sh/7kodenjn6x3slw9/AADr7VBo_RFX0ewpgZauZvZLa?dl=0) (Credit to NASA)
