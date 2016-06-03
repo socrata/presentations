@@ -1,0 +1,164 @@
+---
+layout: slides
+title: National Day of Civic Hacking with Socrata
+---
+
+===
+
+![Fullscreen](/presentations/img/hack_the_planet.jpg)
+
+## _National Day_ of _Civic Hacking_ with _Socrata_
+
+===
+
+# Who the _heck_ are _you_?
+
+---
+
+![Socrata](/presentations/img/hello_world.png)
+
+---
+
+![Fullscreen](/presentations/img/at_table.jpg)
+
+## We build _software_ to make data _more useful_ to _more people_
+
+<!-- https://www.flickr.com/photos/hyku/2497370097 -->
+--- 
+
+![Fullscreen](/presentations/img/city.jpg)
+
+## We believe that _greater access_ to _public data_ makes cities _better places to live_
+
+---
+
+![Fullscreen](/presentations/img/city_hall.jpg)
+
+## We help _governments_ share their _public data_ with _civic developers_
+
+===
+
+# What is _Civic_ _Hacking_?
+
+---
+
+## _civic hacker_ (n)
+
+_One who collaborates with others_ to create, build, and invent open source solutions using publicly-released data, code and technology _to solve social, economic, and environmental challenges_ relevant to their _neighborhood, city, state, or country_.
+
+===
+
+# The _Socrata_ _Open Data APIs_
+
+![SODA](/presentations/img/dev_thumb.png)
+
+---
+
+## Finding Data
+
+### [opendatanetwork.com](http://www.opendatanetwork.com)
+### [bit.ly/hackforchange-data](http://bit.ly/hackforchange-data)
+
+---
+
+### Example: 
+## _"School Immunizations in Kindergarten by Academic Year"_
+
+[chhs.data.ca.gov/d/6xtf-gwye](https://dev.socrata.com/foundry/data.nasa.gov/q8u9-7uq://dev.socrata.com/foundry/chhs.data.ca.gov/6xtf-gwye)
+
+---
+
+## Simple Filters
+
+<code>
+/resource/6xtf-gwye.json?<span class="toy-store-blue">county</span>=<span class="golden">LOS ANGELES</span>
+</code>
+
+<pre><code data-trim contenteditable class="javascript">
+[ {
+  "category":"Conditional",
+  "city":"SOUTH GATE",
+  "county":"LOS ANGELES",
+  "public_private":"PRIVATE",
+  "reported":"N",
+  "school_code":"6145361",
+  "school_name":"100% GRADUATION RATE",
+  "school_year":"2013-2014"
+  }, ...
+]
+</code></pre>
+
+---
+
+## SoQL Queries
+
+<code>
+/resource/6xtf-gwye.json?<br/>
+<span class="toy-store-blue">$where</span>=<span class="golden">LOWER(school_name) LIKE '%washington%'</span>
+</code>
+
+<small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+
+---
+
+## SoQL Aggregation
+
+<code>
+/resource/6xtf-gwye.json?<br/>
+<span class="toy-store-blue">$group</span>=<span class="golden">public_private</span>
+&<span class="toy-store-blue">$select</span>=<span class="golden">public_private, SUM(count)</span>
+</code>
+
+<small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+
+---
+
+## Paging Through Data
+
+<code contenteditable>
+/resource/6xtf-gwye.json?<br/>
+<span class="toy-store-blue">$limit</span>=<span class="golden">50</span><br/>
+&amp;<span class="toy-store-blue">$offset</span>=<span class="golden">100</span>
+</code>
+
+---
+
+## Application Tokens
+
+1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
+2. Include as:
+  - _`X-App-Token: $token`_ HTTP Header or ... 
+  - The _`$$app_token=$token`_ URL parameter
+3. Profit!!! (from more API requests)
+
+===
+
+# Help!
+
+---
+
+## Developer Portal
+
+# [dev.socrata.com](http://dev.socrata.com)
+
+<div class="footnote">Community powered! Learn how to <a href="http://dev.socrata.com/contributing.html">contribute</a>.</div>
+
+---
+
+## Getting Help
+
+![Getting Help](/presentations/img/live-support.gif)
+
+- Track me down in person!
+- IRC: [chat.freenode.net/#socrata-soda](irc://chat.freenode.net/#socrata-soda)
+- Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
+
+===
+
+![Fullscreen](/presentations/img/work_tounge.gif)
+
+## One more thing...
+
+<h1 class="fragment" data-fragment-index="0">We're hiring!</h1>
+
+<h2 class="fragment" data-fragment-index="1"><a href="http://careers.socrata.com">careers.socrata.com</a></h2>
