@@ -11,11 +11,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="{{ site.root }}/lib/reveal.js/css/reveal.css" />
-    <link rel="stylesheet" href="{{ site.root }}/lib/reveal.js/css/theme/night.css" />
-    <link rel="stylesheet" href="{{ site.root }}/lib/reveal.js/lib/css/zenburn.css" />
-    <link rel="stylesheet" href="{{ site.root }}/lib/revealjs-fullscreen-img/fullscreen-img.css" />
-    <link rel="stylesheet" href="{{ site.root }}/css/common.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/reveal.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/theme/night.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/lib/css/zenburn.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/revealjs-fullscreen-img/fullscreen-img.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/common.css" />
     <link rel="stylesheet" href="custom.css" />
     {% if page.custom_css %}<link rel="stylesheet" href="{{ page.custom_css }}" />{% endif %}
 
@@ -23,7 +23,7 @@
 
     <script>
       // If the query includes 'print-pdf' we'll use the PDF print sheet
-      document.write( '<link rel="stylesheet" href="{{ site.root }}/lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print" />' );
+      document.write( '<link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print" />' );
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -49,8 +49,8 @@
       </div>
     </div>
 
-    <script src="{{ site.root }}/lib/reveal.js/lib/js/head.min.js"></script>
-    <script src="{{ site.root }}/lib/reveal.js/js/reveal.js"></script>
+    <script src="{{ site.baseurl }}/lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="{{ site.baseurl }}/lib/reveal.js/js/reveal.js"></script>
 
     <script>
       Reveal.initialize({
@@ -64,32 +64,32 @@
 
         dependencies: [
           // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-          { src: '{{ site.root }}/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
           // Interpret Markdown in <section> elements
-          { src: '{{ site.root }}/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ site.root }}/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
           // Random emphasis colors for Markdown
-          { src: '{{ site.root }}/lib/emphasis/emphasis.js' },
+          { src: '{{ site.baseurl }}/lib/emphasis/emphasis.js' },
 
           // Syntax highlight for <code> elements
-          { src: '{{ site.root }}/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
           // Zoom in and out with Alt+click
-          { src: '{{ site.root }}/lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 
           // Speaker notes
-          { src: '{{ site.root }}/lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '{{ site.baseurl }}/lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 
           // Remote control your reveal.js presentation using a touch device
-          // { src: '{{ site.root }}/lib/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: '{{ site.baseurl }}/lib/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
           // Full-bleed images
-          { src: '{{ site.root }}/lib/revealjs-fullscreen-img/fullscreen-img.js', async: true },
+          { src: '{{ site.baseurl }}/lib/revealjs-fullscreen-img/fullscreen-img.js', async: true },
 
           // Allow customization via external config
-          // { src: '{{ site.root }}/lib/customizer/customizer.js', async: true }
+          // { src: '{{ site.baseurl }}/lib/customizer/customizer.js', async: true }
         ]
       });
     </script>

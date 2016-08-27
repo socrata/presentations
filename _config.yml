@@ -1,3 +1,8 @@
 destination: public/presentations
 exclude: [ public ]
-root: /presentations
+baseurl: /presentations
+
+gems:
+- jekyll-redirect-from
+- jekyll-mentions
+- jekyll-feed
