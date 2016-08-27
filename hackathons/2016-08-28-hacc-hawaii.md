@@ -184,3 +184,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 ===
 
 # _Thanks!_
+
+===
+
+## <http://bit.ly/hacc-socrata>
