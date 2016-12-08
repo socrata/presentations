@@ -1,5 +1,5 @@
 jekyll:
-	bundle exec jekyll build
+	bundle exec jekyll build --incremental
 
 clean:
 	rm -rf public
