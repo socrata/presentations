@@ -2,3 +2,5 @@
 public/*
 internal/*
 .bundle/*
+.DS_Store
+.jekyll-metadata
