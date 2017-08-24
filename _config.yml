@@ -6,3 +6,5 @@ gems:
 - jekyll-redirect-from
 - jekyll-mentions
 - jekyll-feed
+
+theme: jekyll-theme-minimal
