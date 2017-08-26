@@ -74,6 +74,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 ## _Finding_ _Data_
 
 ### [data.hawaii.gov](http://data.hawaii.gov)
+### [dashboard.hawaii.gov](http://dashboard.hawaii.gov)
 ### [opendatanetwork.com](http://www.opendatanetwork.com)
 <!-- ### [github.com/HACC2016](https://github.com/HACC2016) -->
 
@@ -168,6 +169,14 @@ _One who collaborates with others_ to create, build, and invent open source solu
   - The _`$$app_token`_`=`_`$token`_ URL parameter
 3. Yay not getting rate limited!
 
+---
+
+## Open Performance API
+
+![op-api](/presentations/img/op-api.png) <!-- .element width="40%" -->
+
+<small style="padding-top: 5em">For more details see <a href="http://docs.openperformance.apiary.io">docs.openperformance.apiary.io</a></small>
+
 ===
 
 # Help!
@@ -190,7 +199,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 <div class="footnote"><a href="http://socrata.github.io/soda-ruby/">Ruby</a>, <a href="https://github.com/socrata/soda-scala">Scala</a>, <a href="http://socrata.github.io/soda-java/">Java</a>, <a href="https://github.com/socrata/soda-ios-sdk">ObjectiveC</a>, <a href="https://github.com/Chicago/RSocrata">R</a>, <a href="https://github.com/socrata/soda-swift">Swift</a>, etc.</div>
 
---- 
+---
 
 ## Getting Help
 
