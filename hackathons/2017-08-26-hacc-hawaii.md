@@ -217,11 +217,9 @@ If you want help getting your data on the platform so civic hackers can use it e
 
 ===
 
-![You got this!](/presentations/img/thumbs-up.gif) <!-- .element height="100%" -->
-
-===
-
 # _Thanks!_
+
+![You got this!](/presentations/img/thumbs-up.gif) <!-- .element height="100%" -->
 
 ===
 
