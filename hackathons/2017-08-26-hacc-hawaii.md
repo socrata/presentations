@@ -13,9 +13,9 @@ title: Civic Hacking @ HACC Hawaii
 
 ---
 
-![Hey Ladies!](/presentations/img/metcalf.jpg)
+![baby austin](http://i.imgur.com/zvDgRJu.jpg)
 
-<h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> chrismetcalf</h3>
+<h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> avaleske</h3>
 
 ---
 
@@ -23,20 +23,20 @@ title: Civic Hacking @ HACC Hawaii
 
 ---
 
-![Fullscreen](/presentations/img/at_table.jpg)
+![Fullscreen](/presentations/img/product-interactivity.jpg)
 
 ## We build _software_ to make data _more useful_ to _more people_
 
 <!-- https://www.flickr.com/photos/hyku/2497370097 -->
 --- 
 
-![Fullscreen](/presentations/img/city.jpg)
+![Fullscreen](/presentations/img/honolulu-skyline.jpg)
 
-<h2>We believe that _greater access_ to _public data_ makes cities _better places to live_</h2>
+<h2>We believe that _greater access_ to _public data_ makes cities and states _better places to live_</h2>
 
 ---
 
-![Fullscreen](/presentations/img/city_hall.jpg)
+![Fullscreen](/presentations/img/hawaii-capitol-building.jpg)
 
 <h2>We make it _easy_ for _governments_ to share their public data with _civic hackers_</h2>
 
@@ -75,13 +75,19 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ### [data.hawaii.gov](http://data.hawaii.gov)
 ### [opendatanetwork.com](http://www.opendatanetwork.com)
-### [github.com/HACC2016](https://github.com/HACC2016)
+<!-- ### [github.com/HACC2016](https://github.com/HACC2016) -->
 
 ---
 
 ### In the _Data Catalog_
 
 ![Catalog](/presentations/img/catalog_api.png)
+
+---
+
+### From the _Primer page_
+
+![Primer](/presentations/img/primer.png)
 
 ---
 
@@ -126,6 +132,18 @@ _One who collaborates with others_ to create, build, and invent open source solu
 ---
 
 ## SoQL Queries
+
+<code>
+/resource/b2y9-ab7v.json?<br/>
+<span class="toy-store-blue">sunday</span>=<span class="golden">X</span></br>
+&amp;<span class="toy-store-blue">$where</span>=<span class="golden">within_circle(location_1, 21.291, -157.859, 2000)</span>
+</code>
+
+<small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+
+---
+
+## SoQL Queries Cont.
 
 <code>
 /resource/b2y9-ab7v.json?<br/>
@@ -188,4 +206,4 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ===
 
-## <http://bit.ly/hacc-socrata>
+<!-- ## <http://bit.ly/hacc-socrata> -->
