@@ -211,7 +211,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ===
 
-## Hey departmet heads!
+## Hey department heads!
 
 If you want help getting your data on the platform so civic hackers can use it easily, come find us.
 
