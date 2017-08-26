@@ -9,23 +9,19 @@ title: Civic Hacking @ HACC Hawaii
 
 ===
 
-# Who the _heck_ are _you_?
+# Who am I_?_
 
 ---
 
-![baby austin](http://i.imgur.com/zvDgRJu.jpg)
+![baby austin](http://i.imgur.com/zvDgRJu.jpg) <!-- .element width="40%" -->
 
 <h3><img src="/presentations/img/twitter.png" alt="twitter" style="vertical-align: middle" /> avaleske</h3>
 
 ---
 
-![Aloha](/presentations/img/aloha.png)
-
----
-
 ![Fullscreen](/presentations/img/product-interactivity.jpg)
 
-## We build _software_ to make data _more useful_ to _more people_
+## We build _software_ and _processes_ to make data _more useful_ to _more people_
 
 <!-- https://www.flickr.com/photos/hyku/2497370097 -->
 --- 
@@ -40,6 +36,10 @@ title: Civic Hacking @ HACC Hawaii
 
 <h2>We make it _easy_ for _governments_ to share their public data with _civic hackers_</h2>
 
+---
+
+![Aloha](/presentations/img/aloha.png)
+
 ===
 
 ## _civic hacker_ _(n)_
@@ -48,7 +48,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ---
 
-## _Hacking_ drives _civic innovation_
+## _Civic hacking_ drives <br > _civic innovation_
 
 ![Innovate](/presentations/img/innovate.png)
 
@@ -62,7 +62,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ## _Network_ and _have fun_!
 
-![#openbeers](/presentations/img/openbeers.jpg)
+![networking!](https://media.giphy.com/media/2Us6XW8L7zNnO/giphy.gif ) <!-- .element width="50%" -->
 
 ===
 
@@ -82,6 +82,10 @@ _One who collaborates with others_ to create, build, and invent open source solu
 ### In the _Data Catalog_
 
 ![Catalog](/presentations/img/catalog_api.png)
+
+---
+
+### Accessing the _APIs_
 
 ---
 
@@ -135,20 +139,21 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 <code>
 /resource/b2y9-ab7v.json?<br/>
-<span class="toy-store-blue">sunday</span>=<span class="golden">X</span></br>
-&amp;<span class="toy-store-blue">$where</span>=<span class="golden">within_circle(location_1, 21.291, -157.859, 2000)</span>
+<span class="toy-store-blue">$select</span>=<span class="golden">location_info, farmer_s_market <span class="toy-store-blue">AS</span> name, time</span></br>
+&amp;<span class="toy-store-blue">$where</span>=<span class="golden">saturday='X' <span class="toy-store-blue">AND</span> within_circle(location_1, 21.2969, -157.8148, 3000)</span>
 </code>
 
 <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
 
 ---
 
-## SoQL Queries Cont.
+## SoQL Queries Cont. (Paging)
 
 <code>
 /resource/b2y9-ab7v.json?<br/>
-<span class="toy-store-blue">sunday</span>=<span class="golden">X</span></br>
-&amp;<span class="toy-store-blue">$where</span>=<span class="golden">within_circle(location_1, 21.291, -157.859, 2000)</span>
+<span class="toy-store-blue">$limit</span>=<span class="golden">50</span></br>
+&amp;<span class="toy-store-blue">$offset</span>=<span class="golden">200</span><br/>
+&amp;<span class="toy-store-blue">$order</span>=<span class="golden">:id</span>
 </code>
 
 <small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
@@ -161,7 +166,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 2. Include as:
   - _`X-App-Token: $token`_ HTTP Header or ... 
   - The _`$$app_token`_`=`_`$token`_ URL parameter
-3. Profit!!! (from more API requests)
+3. Yay not getting rate limited!
 
 ===
 
@@ -198,7 +203,7 @@ _One who collaborates with others_ to create, build, and invent open source solu
 
 ===
 
-![Let's get this party started!](/presentations/img/lets_get_this_party_started.gif)
+![You got this!](/presentations/img/thumbs-up.gif) <!-- .element height="100%" -->
 
 ===
 
