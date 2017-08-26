@@ -209,6 +209,11 @@ _One who collaborates with others_ to create, build, and invent open source solu
 - IRC: [dev.socrata.com/irc.html](http://dev.socrata.com/irc.html)
 - Stack Overflow: [soda](http://stackoverflow.com/questions/tagged/soda) or [socrata](http://stackoverflow.com/questions/tagged/socrata)
 
+===
+
+## Hey departmet heads!
+
+If you want help getting your data on the platform so civic hackers can use it easily, come find us.
 
 ===
 
